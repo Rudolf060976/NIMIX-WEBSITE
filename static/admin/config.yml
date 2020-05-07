@@ -1,0 +1,52 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - label: "Noticias"
+    name: "Noticias"
+    folder: "site/content/news"
+    create: true
+    extension: md
+    format: frontmatter
+    fields:
+      - {label: Title, name: title, widget: string}
+      - {label: "Publish Date", name: date, widget: datetime}
+      - {label: "Feature Image", name: header_image, widget: image}      
+      - {label: Body, name: body, widget: markdown}
+  - label: "Index Page"
+    name: "index"
+    files:
+      - label: "Slide Images"
+        name: "slide"
+        file: "site/content/slide.json"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Image, name: image, widget: image}
+      - label: "Features"
+        name: "features"
+        file: "site/content/features.json"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - label: Features
+            name: features
+            widget: list
+            fields:
+              - {label: "Feature Name", name: feature_name, widget: string}
+              - {label: "Icon Image", name: icon, widget: image}
+      - label: "Why to Buy"
+        name: "whytobuy"
+        file: "site/content/whytobuy.json"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - label: "Why to Buy"
+            name: whytobuy
+            widget: list
+            fields:
+              - {label: "Reason", name: reason, widget: string}
+              - {label: "Icon Image", name: icon, widget: image} 
+              
+
