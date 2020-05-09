@@ -1,3 +1,38 @@
 {
-    
+  "features": [
+    {
+      "feature_name": "Facturación"
+    },
+    {
+      "feature_name": "Presupuestos"
+    },
+    {
+      "feature_name": "Notas de Entrega"
+    },
+    {
+      "feature_name": "Inventario"
+    },
+    {
+      "feature_name": "Cuentas por Cobrar"
+    },
+    {
+      "feature_name": "Compras"
+    },
+    {
+      "feature_name": "Gastos"
+    },
+    {
+      "feature_name": "Cuentas por Pagar"
+    },
+    {
+      "feature_name": "Bancos"
+    },
+    {
+      "feature_name": "Recenciones"
+    },
+    {
+      "feature_name": "Libros de Compras y Ventas"
+    }
+  ],
+  "title": "El Sistema Administrativo de última generación que incluye:"
 }
