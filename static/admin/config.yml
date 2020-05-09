@@ -36,8 +36,7 @@ collections:
             name: "features"
             widget: "list"
             fields:
-              - {label: "Feature Name", name: "feature_name", widget: "string"}
-              - {label: "Icon Image", name: "icon", widget: "image"}
+              - {label: "Feature Name", name: "feature_name", widget: "string"}              
       - label: "Why to Buy"
         name: "whytobuy"
         file: "site/content/whytobuy.json"
@@ -47,7 +46,6 @@ collections:
             name: "whytobuy"
             widget: "list"
             fields:
-              - {label: "Reason", name: "reason", widget: "string"}
-              - {label: "Icon Image", name: "icon", widget: "image"} 
+              - {label: "Reason", name: "reason", widget: "string"}              
               
 
