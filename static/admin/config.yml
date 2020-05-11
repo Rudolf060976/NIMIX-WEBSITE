@@ -23,13 +23,13 @@ collections:
     files:
       - label: "Slide Images"
         name: "slide"
-        file: "site/content/slide.json"
+        file: "site/content/slide/slide.json"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Image", name: "image", widget: "image"}
       - label: "Features"
         name: "features"
-        file: "site/content/features.json"
+        file: "site/content/features/features.json"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - label: "Features"
@@ -39,7 +39,7 @@ collections:
               - {label: "Feature Name", name: "feature_name", widget: "string"}
       - label: "We Offer"
         name: "we_offer"
-        file: "site/content/weoffer.json"
+        file: "site/content/weoffer/weoffer.json"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - label: "We Offer"
@@ -49,7 +49,7 @@ collections:
               - {label: "Offer Name", name: "offer_name", widget: "string"}                                    
       - label: "Why to Buy"
         name: "whytobuy"
-        file: "site/content/whytobuy.json"
+        file: "site/content/whytobuy/whytobuy.json"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - label: "Why to Buy"

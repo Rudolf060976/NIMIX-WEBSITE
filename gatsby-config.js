@@ -18,8 +18,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `content`,
-        path: `${__dirname}/site/content`,
+        name: `features`,
+        path: `${__dirname}/site/content/features`,
       }
     },
     {
@@ -27,6 +27,27 @@ module.exports = {
       options: {
         name: `news`,
         path: `${__dirname}/site/content/news`,
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `features`,
+        path: `${__dirname}/site/content/slide`,
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `features`,
+        path: `${__dirname}/site/content/weoffer`,
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `features`,
+        path: `${__dirname}/site/content/whytobuy`,
       }
     },
     `gatsby-plugin-sass`,

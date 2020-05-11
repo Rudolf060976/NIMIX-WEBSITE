@@ -47,7 +47,7 @@ const FeaturesList = ({ featuresList }) => {
 
 function Features() {
 
-    const data = useStaticQuery(graphql`
+/*    const data = useStaticQuery(graphql`
         query {
             contentJson(id: { eq: "f3d66aa2-9c82-5a41-9c74-bec6ebcec3f1" }) {
                 title
@@ -69,7 +69,10 @@ function Features() {
                 <FeaturesList featuresList={features} />
             </StyledList>
         </StyledContainer>
-    );
+    );  */
+
+    return (<></>);
+
 }
 
 export default Features;
