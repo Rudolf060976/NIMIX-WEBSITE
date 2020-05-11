@@ -4,7 +4,7 @@ import SEO from "../components/seo";
 import '../FontAwesome/library';
 import HomeGallery from "../components/HomeGallery/HomeGallery";
 import Features from "../components/Features/Features";
-import Weoffer from "../components/WeOffer/Weoffer";
+import Weoffer from "../components/Weoffer/Weoffer";
 import Whytobuy from "../components/Whytobuy/Whytobuy";
 
 
