@@ -47,19 +47,21 @@ const FeaturesList = ({ featuresList }) => {
 
 function Features() {
 
-/*    const data = useStaticQuery(graphql`
+    const data = useStaticQuery(graphql`
         query {
-            contentJson(id: { eq: "f3d66aa2-9c82-5a41-9c74-bec6ebcec3f1" }) {
-                title
-                features {
-                    feature_name
-                }
-            }
+            allFeaturesJson {
+     	        nodes {
+       	            title
+                    features {
+                        feature_name
+                    }
+                }      	
+            }  
         }
     `);
 
-    const title = data.contentJson.title;
-    const features = data.contentJson.features;
+    const title = data.allFeaturesJson.nodes[0].title;
+    const features = data.allFeaturesJson.nodes[0].features;
 
 
     return (
@@ -69,7 +71,7 @@ function Features() {
                 <FeaturesList featuresList={features} />
             </StyledList>
         </StyledContainer>
-    );  */
+    );  
 
     return (<></>);
 
