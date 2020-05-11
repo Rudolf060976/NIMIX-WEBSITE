@@ -1,4 +1,23 @@
 {
-
-    
+  "title": "Le Ofrecemos:",
+  "we_offer": [
+    {
+      "offer_name": "Asesoría pre-venta."
+    },
+    {
+      "offer_name": "Instalacion y Configuración Remota."
+    },
+    {
+      "offer_name": "Entrenamiento Telefónico / Videos Tutoriales."
+    },
+    {
+      "offer_name": "Soporte Técnico Post-Venta."
+    },
+    {
+      "offer_name": "Personalización a sus requerimientos."
+    },
+    {
+      "offer_name": "Mejoramiento contínuo."
+    }
+  ]
 }
