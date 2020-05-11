@@ -32,21 +32,21 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `features`,
+        name: `slide`,
         path: `${__dirname}/site/content/slide`,
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `features`,
+        name: `weoffer`,
         path: `${__dirname}/site/content/weoffer`,
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `features`,
+        name: `whytobuy`,
         path: `${__dirname}/site/content/whytobuy`,
       }
     },

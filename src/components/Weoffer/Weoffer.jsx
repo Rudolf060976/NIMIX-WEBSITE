@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useStaticQuery, graphql } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
+
 
 
 const StyledContainer = styled.section`
 
-    width: 100%;
+
 
 
 `;
@@ -19,15 +20,12 @@ const StyledTitle = styled.h4`
 
 `;
 
-
 const StyledList = styled.ul`
 
     width: 80%;
     margin: 0 auto;
     list-style-type: none;
 `;
-
-
 
 const StyledListItem = styled.li`
 
@@ -39,40 +37,40 @@ const FeaturesList = ({ featuresList }) => {
 
     return featuresList.map((feature, index) => {
         return(
-            <StyledListItem key={index}>{feature.feature_name}</StyledListItem>
+            <StyledListItem key={index}>{feature.offer_name}</StyledListItem>
         );
     });
 
 };
 
-function Features() {
+
+function Weoffer() {
 
     const data = useStaticQuery(graphql`
         query {
-            allFeaturesJson {
+            allWeofferJson {
      	        nodes {
        	            title
-                    features {
-                        feature_name
+                    we_offer {
+                        offer_name
                     }
                 }      	
-            }  
-        }
+            }
+        }    
     `);
 
-    const title = data.allFeaturesJson.nodes[0].title;
-    const features = data.allFeaturesJson.nodes[0].features;
+    const title = data.allWeofferJson.nodes[0].title;
+    const offerList = data.allWeofferJson.nodes[0].we_offer;
 
 
     return (
         <StyledContainer>
             <StyledTitle>{title}</StyledTitle>
             <StyledList>
-                <FeaturesList featuresList={features} />
+                <FeaturesList featuresList={offerList} />
             </StyledList>
         </StyledContainer>
-    );  
-
+    );
 }
 
-export default Features;
+export default Weoffer;
