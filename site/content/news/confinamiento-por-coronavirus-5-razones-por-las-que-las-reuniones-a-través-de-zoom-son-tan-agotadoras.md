@@ -5,7 +5,7 @@ date: 2020-05-11T16:40:32.372Z
 description: Para muchos de nosotros, trabajar desde la casa durante la crisis
   del coronavirus ha significado pasar mucho tiempo en aplicaciones de reuniones
   de video, como Zoom. Los efectos de esto nos han tomado por sorpresa.
-header_image: /images/uploads/image.jpg
+header_image: /images/uploads/zoomvideoconf.jpg
 ---
 Tener cabezas gigantes que nos miran de cerca durante largos períodos puede ser desagradable para muchos de nosotros. Además de que podemos pensar que debíamos habernos arreglado el cabello o maquillado o quitado la piyama.
 
