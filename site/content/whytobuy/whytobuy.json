@@ -1,22 +1,16 @@
 {
   "whytobuy": [
     {
-      "reason": "Asesoría pre-venta"
+      "reason": "FACILIDAD DE OPERACION"
     },
     {
-      "reason": "Instalación y Configuración Remota"
+      "reason": "ESTABILIDAD Y CONFIABILIDAD"
     },
     {
-      "reason": "Entrenamiento Telefónico o con Video Tutoriales"
+      "reason": "ENTRENAMIENTO POR VIDEOS"
     },
     {
-      "reason": "Soporte Técnico Post-Venta"
-    },
-    {
-      "reason": "Personalización a sus requerimientos"
-    },
-    {
-      "reason": "Mejoramiento Contínuo"
+      "reason": "SERVICIO GARANTIZADO"
     }
   ],
   "title": "Le ofrecemos"
