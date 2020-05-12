@@ -1,23 +1,29 @@
 {
-  "title": "Le Ofrecemos:",
+  "title": "Le ofrecemos:",
   "we_offer": [
     {
-      "offer_name": "Asesoría pre-venta."
+      "offer_name": "Asesoría pre-venta.",
+      "image": "/images/uploads/asesoria.jpg"
     },
     {
-      "offer_name": "Instalacion y Configuración Remota."
+      "offer_name": "Instalación y Configuración Remota.",
+      "image": "/images/uploads/instalacion.jpg"
     },
     {
-      "offer_name": "Entrenamiento Telefónico / Videos Tutoriales."
+      "offer_name": "Entrenamiento Telefónico / Videos Tutoriales.",
+      "image": "/images/uploads/entrenamiento.jpg"
     },
     {
-      "offer_name": "Soporte Técnico Post-Venta."
+      "offer_name": "Soporte Técnico Post-Venta.",
+      "image": "/images/uploads/soporte.jpg"
     },
     {
-      "offer_name": "Personalización a sus requerimientos."
+      "offer_name": "Personalización a sus requerimientos.",
+      "image": "/images/uploads/personalizacion.jpg"
     },
     {
-      "offer_name": "Mejoramiento contínuo."
+      "offer_name": "Mejoramiento contínuo.",
+      "image": "/images/uploads/mejoramiento.jpg"
     }
   ]
 }
