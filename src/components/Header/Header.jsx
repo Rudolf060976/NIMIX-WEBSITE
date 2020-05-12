@@ -1,8 +1,39 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import Image from 'gatsby-image';
 import { graphql, useStaticQuery } from 'gatsby';
 import Menu from './Menu';
+
+
+const logoAnimation = keyframes`
+
+    from {
+
+        transform: translateX(-2500px);
+
+       
+
+    }
+
+    75% {
+
+        transform: translateX(0) skewX(-25deg);
+
+        
+
+    }
+
+    to {
+
+        transform: translateX(0) skewX(0deg);
+
+       
+
+    }
+
+
+`;
+
 
 
 const StyledContainer = styled.header`
@@ -23,13 +54,26 @@ const StyledLogoContainer = styled.div`
 
     flex: 1 1 20%;
 
+    padding-left: 30px;
+
+   
+    
 `;
 
 
 const StyledLogo = styled(Image)`
 
     width: 100%;
+
     max-width: 400px;
+    
+    transform: translateX(-2500px);
+
+    animation-name: ${logoAnimation};
+
+    animation-duration: 1s;
+
+    animation-fill-mode: forwards;
 
 `;
 

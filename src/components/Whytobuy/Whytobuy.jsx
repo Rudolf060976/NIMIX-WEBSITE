@@ -6,12 +6,14 @@ import { graphql, useStaticQuery } from 'gatsby';
 
 const StyledContainer = styled.section`
 
+    width: 100%;
 
+    padding: 30px 0;
 
 
 `;
 
-const StyledTitle = styled.h4`
+const StyledTitle = styled.h1`
 
     width: 100%;
 

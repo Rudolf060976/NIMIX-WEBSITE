@@ -16,7 +16,7 @@ html {
     -moz-osx-font-smoothing: grayscale;
     max-width: $PageMaxWidth;
     @include fontSize(1.6); 
-    font-family: Roboto, sans-serif, Verdana, Geneva, Tahoma;
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
     
   }
   article,

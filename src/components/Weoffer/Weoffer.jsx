@@ -6,17 +6,23 @@ import { graphql, useStaticQuery } from 'gatsby';
 
 const StyledContainer = styled.section`
 
+    width: 100%;
 
+    padding: 50px 0;
 
+    background-color: ${props => props.theme.colorMainBlueDark};
 
 `;
 
-const StyledTitle = styled.h4`
+const StyledTitle = styled.h3`
 
     width: 100%;
 
-    text-align: center;
+    font-family: Roboto, sans-serif, Verdana, Geneva, Tahoma;
 
+    color: ${props => props.theme.colorMainWhite};
+
+    padding-left: 40px;
 
 `;
 
@@ -29,7 +35,13 @@ const StyledList = styled.ul`
 
 const StyledListItem = styled.li`
 
+    font-family: Roboto, sans-serif, Verdana, Geneva, Tahoma;
 
+    font-size: 24px;
+
+    font-weight: 700;
+
+    color: ${props => props.theme.colorMainBlueClear2};
 
 `;
 

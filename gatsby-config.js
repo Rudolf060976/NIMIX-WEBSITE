@@ -50,6 +50,7 @@ module.exports = {
         path: `${__dirname}/site/content/whytobuy`,
       }
     },
+    `gatsby-transformer-remark`,
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-styled-components`,
