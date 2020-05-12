@@ -47,7 +47,8 @@ collections:
             name: "we_offer"
             widget: "list"
             fields:
-              - {label: "Offer Name", name: "offer_name", widget: "string"}                                    
+              - {label: "Offer Name", name: "offer_name", widget: "string"}
+              - {label: "Image", name: "image", widget: "image"}                                    
       - label: "Why to Buy"
         name: "whytobuy"
         file: "site/content/whytobuy/whytobuy.json"
