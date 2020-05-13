@@ -1,17 +1,30 @@
 {
   "whytobuy": [
     {
-      "reason": "FACILIDAD DE OPERACION"
+      "reason": "Facilidad de Operación",
+      "image": "/images/uploads/facilidad.jpg",
+      "description": "Ambiente amigable y gráfico. Las tareas se realizan de manera intuitiva. "
     },
     {
-      "reason": "ESTABILIDAD Y CONFIABILIDAD"
+      "reason": "Estabilidad y Confiabilidad",
+      "description": "Diseño probado y comprobado que garantiza un alto rendimiento de manera permantente. ",
+      "image": "/images/uploads/estabilidad.jpg"
     },
     {
-      "reason": "ENTRENAMIENTO POR VIDEOS"
+      "reason": "Tutoriales en Videos",
+      "description": "Videos de 5 minutos que explican las operaciones básicas.",
+      "image": "/images/uploads/videos.jpg"
     },
     {
-      "reason": "SERVICIO GARANTIZADO"
+      "reason": "Seguridad Integrada",
+      "image": "/images/uploads/seguridad.jpg",
+      "description": "Cada usuario tiene una contraseña y puede ser configurado con privilegios de operación del sistema y de acceso al menú."
+    },
+    {
+      "reason": "Servicio Técnico Remoto",
+      "image": "/images/uploads/servicio.jpg",
+      "description": "Solicite asistencia técnica en el Website y espere nuestro contacto para programar su servicio."
     }
   ],
-  "title": "¿Por qué adquirir Nimix1?"
+  "title": "Razones para empezar a Nimix1"
 }
