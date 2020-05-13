@@ -58,6 +58,8 @@ collections:
             name: "whytobuy"
             widget: "list"
             fields:
-              - {label: "Reason", name: "reason", widget: "string"}              
+              - {label: "Reason", name: "reason", widget: "string"}   
+              - {label: "Description", name: "description", widget: "string"}
+              - {label: "Image", name: "image", widget: "image"}                 
               
 

@@ -8,16 +8,21 @@ const StyledContainer = styled.section`
 
     width: 100%;
 
-    padding: 30px 0;
+    padding: 50px 0;
 
 
 `;
 
-const StyledTitle = styled.h1`
+const StyledTitle = styled.h3`
 
     width: 100%;
 
     text-align: center;
+
+    font-family: Roboto, sans-serif, Verdana, Geneva, Tahoma;
+
+    color: ${props => props.theme.colorMainBlueDark};
+
 
 
 `;

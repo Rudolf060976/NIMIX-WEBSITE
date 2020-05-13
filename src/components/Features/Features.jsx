@@ -8,8 +8,6 @@ const StyledContainer = styled.section`
 
     width: 100%;
 
-    padding: 50px 0;
-
 `;
 
 const StyledTitle = styled.h3`
@@ -37,6 +35,7 @@ const StyledList = styled.ul`
     width: 60%;
     margin: 0 auto;
     list-style-type: none;
+
     padding: 100px 0;
 
     display: grid;
@@ -81,14 +80,6 @@ const StyledIcon = styled.span`
 `;
 
 
-const StyledSeparator = styled.div`
-
-    height: 3px;
-
-    background-color: ${props => props.theme.colorMainBlueClear2};
-
-
-`;
 
 const FeaturesList = ({ featuresList }) => {
 
@@ -124,8 +115,7 @@ function Features() {
             <StyledTitle>{title}</StyledTitle>
             <StyledList>
                 <FeaturesList featuresList={features} />
-            </StyledList>
-            <StyledSeparator />
+            </StyledList>            
         </StyledContainer>
     );  
 
