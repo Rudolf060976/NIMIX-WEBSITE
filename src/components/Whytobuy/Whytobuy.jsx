@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { graphql, useStaticQuery } from 'gatsby';
+import WhytobuyItem from './WhytobuyItem';
 
 
 
@@ -32,19 +33,29 @@ const StyledList = styled.ul`
     width: 80%;
     margin: 0 auto;
     list-style-type: none;
+
+    display: grid;
+
+    grid-template-areas:
+    "area1 ..."
+    "...   area2"
+    "area3 ..."
+    "...   area4"
+    "area5 ...";
+
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-rows: repeat(5, auto);    
+
 `;
 
-const StyledListItem = styled.li`
 
-
-
-`;
 
 const FeaturesList = ({ featuresList }) => {
 
     return featuresList.map((feature, index) => {
         return(
-            <StyledListItem key={index}>{feature.reason}</StyledListItem>
+            <WhytobuyItem key={index} data={feature} area={`area${index+1}`} />
         );
     });
 
@@ -60,6 +71,8 @@ function Whytobuy() {
        	            title
                     whytobuy {
                         reason
+                        description
+                        image
                     }
                 }      	
             }  
