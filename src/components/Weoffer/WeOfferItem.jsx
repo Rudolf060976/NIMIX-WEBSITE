@@ -45,17 +45,27 @@ const titleAnimation = keyframes`
 
 
 const StyledContainer = styled.li`
-   
+
+    width: 100%;    
+    max-width: 300px;   
     grid-row: auto;
-
     grid-column: auto;
-
     display: flex;
     flex-flow: column nowrap;
     align-items: center; 
-    justify-content: flex-start;
-    width: 100%;    
-    max-width: 300px;
+    justify-content: flex-start;   
+
+    @media (max-width: 1400px) {
+        
+        max-width: 240px;        
+
+    }
+
+    @media (max-width: 1100px) {
+        
+        max-width: 210px;        
+
+    }
 
 `;
 
@@ -81,6 +91,18 @@ const StyledImage = styled.img`
 
     &:hover {
         transform: scale(1.1);
+
+    }
+
+    @media (max-width: 1400px) {
+        
+        max-width: 150px;        
+
+    }
+
+    @media (max-width: 1100px) {
+        
+        max-width: 120px;        
 
     }
 
@@ -116,6 +138,26 @@ const StyledContent = styled.h6`
     animation-fill-mode: forwards;
 
     animation-delay: .4s;
+
+    @media (max-width: 1400px) {
+        
+        font-size: 20px;
+
+    }
+
+    @media (max-width: 1100px) {
+        
+        font-size: 16px;
+
+        line-height: 20px;
+
+    }
+
+    @media (max-width: 750px) {
+        
+        font-size: 14px;
+
+    }
 
 
 `;

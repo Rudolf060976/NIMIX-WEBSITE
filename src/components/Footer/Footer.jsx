@@ -25,6 +25,19 @@ const StyledList = styled.ul`
     align-items: center;
     list-style-type: none;
 
+     @media (max-width: 600px) {
+
+        flex-flow: column nowrap;
+
+    }
+
+      @media (max-width: 600px) {
+
+        padding: 30px 0;
+
+    }
+
+
 `;
 
 const StyledListItem = styled.li`
@@ -52,6 +65,21 @@ const StyledLink = styled.a`
 
     }
 
+     @media (max-width: 1200px) {
+
+        font-size: 2rem;
+
+    }
+
+      @media (max-width: 600px) {
+
+       display: block;
+       padding: 10px 0;
+
+    }
+
+
+
 `;
 
 const StyledBuildBy = styled.p`
@@ -62,7 +90,13 @@ const StyledBuildBy = styled.p`
 
     font-family: Roboto, sans-serif, Verdana, Geneva, Tahoma;
 
-    font-size: 16px;
+    font-size: 1.2rem;
+
+     @media (max-width: 1200px) {
+
+        font-size: 1.6rem;
+
+    }
 
 `;
 

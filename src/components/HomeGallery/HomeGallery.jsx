@@ -20,11 +20,49 @@ const StyledCenter = styled.div`
 
     position: relative;
 
-    width: 60%;
+    width: 70%;
 
     height: 900px;
 
     margin: 0 auto;
+
+     @media (max-width: 1800px) {
+
+        height: 800px;
+
+    }
+
+     @media (max-width: 1600px) {
+
+        width: 80%;
+
+    }
+
+    @media (max-width: 1300px) {
+
+        height: 700px;
+
+    }
+
+    @media (max-width: 1000px) {
+
+        height: 500px;
+
+    }
+
+    @media (max-width: 700px) {
+
+        height: 400px;
+        width: 90%;
+
+    }
+
+     @media (max-width: 500px) {
+
+        width: 100%;
+
+    }
+
 
 `;
 
@@ -93,6 +131,30 @@ const StyledList = styled.ul`
 
     margin: 0;
     padding: 0;
+
+    @media (max-width: 1800px) {
+
+        height: 800px;
+
+    }
+
+    @media (max-width: 1300px) {
+
+        height: 700px;
+
+    }
+
+    @media (max-width: 1000px) {
+
+        height: 500px;
+
+    }
+
+    @media (max-width: 700px) {
+
+        height: 400px;
+
+    }
 
 `;
 

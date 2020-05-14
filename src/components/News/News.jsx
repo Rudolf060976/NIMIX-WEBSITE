@@ -16,6 +16,13 @@ const StyledContainer = styled.section`
 
     clip-path: polygon(0% 0%, 100% 5%, 100% 100%, 0% 100%);
 
+    @media (max-width: 750px) {
+
+        padding-top: 100px;
+        clip-path: polygon(0% 0%, 100% 2%, 100% 100%, 0% 100%);
+
+    }
+
 `;
 
 const StyledTitle = styled.h3`
@@ -32,15 +39,51 @@ const StyledTitle = styled.h3`
 
 const StyledNewsList = styled.ul`
 
-    display: flex;
+    width: 100%;
 
-    justify-content: space-around;
+    margin: 0 auto;
 
-    align-items: flex-start;
+    display: grid;
 
-    padding: 30px 0;
+    grid-template-areas:
+    "area1 area2 area3 area4";
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 
-    list-style-type: none;
+    grid-template-rows: repeat(1, auto);    
+
+    grid-auto-flow: row;
+
+    gap: 20px 30px;
+
+    padding: 30px 20px;
+
+    list-style-type: none; 
+
+    justify-items: center;  
+
+    @media (max-width: 1500px) {
+
+        grid-template-areas:
+        "area1 area2";
+    
+        grid-template-columns: 1fr 1fr;
+
+        grid-template-rows: repeat(1, auto);         
+
+    }
+
+    @media (max-width: 750px) {
+
+        grid-template-areas:
+        "area1";
+    
+        grid-template-columns: 1fr;
+
+        grid-template-rows: repeat(1, auto);         
+   
+
+    }      
 
 `;
 

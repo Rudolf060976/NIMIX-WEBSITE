@@ -9,9 +9,14 @@ const StyledContainer = styled.section`
 
     width: 100%;
 
-    padding: 50px 0;
+    padding: 50px 20px;
 
+    @media (max-width: 500px) {
 
+        padding: 20px 0;
+
+    }
+    
 `;
 
 const StyledTitle = styled.h3`
@@ -24,6 +29,16 @@ const StyledTitle = styled.h3`
 
     color: ${props => props.theme.colorMainBlueDark};
 
+    padding: 10px 20px;
+
+    line-height: 42px;
+
+    @media (max-width: 500px) {
+
+        line-height: 30px;
+        
+
+    }
     
 `;
 
@@ -32,6 +47,7 @@ const StyledList = styled.ul`
     width: 80%;
     margin: 0 auto;
     list-style-type: none;
+    
     
     padding: 100px 20px;
     
@@ -47,9 +63,54 @@ const StyledList = styled.ul`
 
     grid-template-rows: repeat(5, auto);    
 
-    gap: 20px 0;
+    gap: 20px 20px;
 
     justify-items: center;
+
+     @media (max-width: 1850px) {
+
+        width: 90%;
+
+    }
+
+     @media (max-width: 1000px) {
+
+        width: 100%;
+
+    }
+
+     @media (max-width: 950px) {
+
+        width: 100%;
+
+        gap: 30px 0;
+
+    }
+
+     @media (max-width: 900px) {
+
+        grid-template-areas:
+        "area1"
+        "area2"
+        "area3"
+        "area4"
+        "area5";
+
+        grid-template-columns: 1fr;
+
+        grid-template-rows: repeat(5, auto);  
+
+        padding: 50px 20px;  
+
+    }
+
+    @media (max-width: 500px) {
+
+        padding: 50px 15px 50px 10px;
+
+    }
+
+    
 
 `;
 

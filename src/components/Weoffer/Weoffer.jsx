@@ -15,6 +15,18 @@ const StyledContainer = styled.section`
 
     clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 
+     @media (max-width: 750px) {
+
+        clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
+
+    }
+
+     @media (max-width: 450px) {
+
+        clip-path: polygon(0% 0%, 100% 0%, 100% 97%, 0% 100%);
+
+    }
+
 `;
 
 const StyledTitle = styled.h3`
@@ -48,9 +60,59 @@ const StyledList = styled.ul`
 
     grid-auto-flow: row;
 
-    gap: 60px 20px;
+    gap: 60px 30px;
 
     padding: 40px 0;
+
+    @media (max-width: 1800px) {
+        
+        width: 90%;
+        
+
+    }
+
+    @media (max-width: 900px) {
+        
+        grid-template-areas:
+        "area1 area2 area3";
+
+        grid-template-columns: 1fr 1fr 1fr;
+
+        grid-template-rows: repeat(1, auto);
+
+        width: 90%;
+
+        padding-bottom: 100px;
+
+    }
+
+    @media (max-width: 750px) {
+        
+        grid-template-areas:
+        "area1 area2";
+
+        grid-template-columns: 1fr 1fr;
+
+        grid-template-rows: repeat(1, auto);
+
+        justify-items: center;
+    }
+
+    @media (max-width: 450px) {
+        
+        grid-template-areas:
+        "area1";
+
+        grid-template-columns: 1fr;
+
+        grid-template-rows: repeat(1, auto);
+
+        justify-items: center;
+
+        gap: 40px 0;
+
+        
+    }
 
 `;
 

@@ -8,7 +8,9 @@ import {
     faArrowAltCircleRight,
     faCertificate,
     faCheckCircle,
-    faHandPointRight           
+    faHandPointRight,
+    faBars,
+    faTimes          
 } from '@fortawesome/free-solid-svg-icons';
 
 /* import {
@@ -22,7 +24,7 @@ import {
     faFacebookF
 } from '@fortawesome/free-brands-svg-icons'; */
 
-library.add(faAngleRight, faAngleLeft, faArrowCircleRight, faArrowCircleLeft, faArrowAltCircleRight, faCertificate, faCheckCircle, faHandPointRight);
+library.add(faAngleRight, faAngleLeft, faArrowCircleRight, faArrowCircleLeft, faArrowAltCircleRight, faCertificate, faCheckCircle, faHandPointRight, faBars, faTimes);
 
 /*
 

@@ -1,13 +1,92 @@
-import React from 'react';
-import styled from 'styled-components';
-import {rgba} from 'polished';
+import React, { useState } from 'react';
+import styled, { keyframes } from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+const animationOpen = keyframes`
+
+    from {
+        transform: translateX(-110%);
+
+    }
+
+    to {
+        transform: translateX(-20%);
+    }
+
+`;
+
+const animationClose = keyframes`
+
+from {
+        transform: translateX(-20%);
+
+    }
+
+    to {
+        transform: translateX(-110%);
+    }
+
+`;
+
 
 const StyledContainer = styled.nav`
 
     flex: 1 1 40%;
 
+    @media (max-width: 700px) {
+
+        width: 100%;
+
+
+    }
+
+    @media (max-width: 500px) {
+
+        position: absolute;
+        top: 0;
+        left: 0;        
+        z-index: 5000;
+        background-color: ${props => props.theme.colorMainBlueDark};        
+        height: 100vh; 
+        width: 100vw;  
+        transform: translateX(-110%);
+
+        animation-name: ${props => props.openMenu ? animationOpen : ( props.closeMenu ? animationClose : null ) };
+        animation-duration: .5s; 
+        animation-fill-mode: forwards;  
+
+        box-shadow: 3px 3px 5px black; 
+
+    }
+
+    
+`;
+
+const StyledCloseButton = styled.span`
+
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+    color: ${props => props.theme.colorMainWhite};  
+
+    @media (max-width: 500px) {
+
+        display: inline-block;
+        padding: 15px 20px;        
+        font-size: 2.4rem;        
+        z-index: 6000;
+    }
+
+    &:active {
+
+        border: ${props => props.theme.colorMainWhite} solid 1px;
+        border-radius: 5px;
+
+    }
 
 `;
+
 
 
 const StyledMenuList = styled.ul`
@@ -24,11 +103,30 @@ const StyledMenuList = styled.ul`
 
     border-radius: 10px;
 
+    @media (max-width: 800px) {
+
+        padding: 10px 10px;
+
+
+    }
+
+    @media (max-width: 500px) {
+
+        flex-flow: column nowrap;
+
+        padding-top: 70px;
+
+
+    }
+
+
+
 `;
 
 
 const StyledMenuListItem = styled.li`
 
+    
     
 `;
 
@@ -56,7 +154,36 @@ const StyledMenuLink = styled.a`
         text-decoration: none;
 
         color: ${props => props.theme.colorMainBlueClear1};
+
+        @media (max-width: 500px) {
+
+            color: ${props => props.theme.colorMainBlueDark};
+
+            background-color: ${props => props.theme.colorMainBlueClear1};
+
+        }       
     
+
+    }
+
+
+     @media (max-width: 500px) {
+
+        padding: 20px 0 20px 150px;
+
+        font-size: 2.4rem;
+
+    }
+
+     @media (max-width: 400px) {
+
+        padding-left: 100px;
+
+    }
+
+     @media (max-width: 300px) {
+
+        padding-left: 80px;
 
     }
 
@@ -65,9 +192,30 @@ const StyledMenuLink = styled.a`
 `;
 
 
-function Menu() {
+function Menu({ openMenu, handleCloseMenu }) {
+
+    const [closeMenu, setCloseMenu] = useState(false);
+
+    const handleCloseClick = () => {
+
+        setCloseMenu(true);
+
+        handleCloseMenu();
+
+        setTimeout(() => {
+            
+            setCloseMenu(false);
+
+        }, 1000);
+
+    };
+
+
     return (
-        <StyledContainer>
+        <StyledContainer openMenu={openMenu} closeMenu={closeMenu}>
+            <StyledCloseButton onClick={(e) => handleCloseClick()}>
+                <FontAwesomeIcon icon="times" size="lg"/>
+            </StyledCloseButton>
             <StyledMenuList>
                 <StyledMenuListItem>
                     <StyledMenuLink href="#">

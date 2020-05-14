@@ -22,9 +22,18 @@ const StyledTitle = styled.h3`
 
     background-color: ${props => props.theme.colorMainGreenDark};
 
-    padding: 25px 0;
+    padding: 25px 20px;
 
     letter-spacing: 2px;
+
+    line-height: 42px;
+
+    @media (max-width: 500px) {
+
+        line-height: 30px;
+        
+
+    }
         
 
 `;
@@ -33,7 +42,9 @@ const StyledTitle = styled.h3`
 const StyledList = styled.ul`
 
     width: 60%;
+
     margin: 0 auto;
+
     list-style-type: none;
 
     padding: 100px 0;
@@ -43,13 +54,111 @@ const StyledList = styled.ul`
     grid-template-areas:
     "area1 area2 area3";
 
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: .8fr 1fr 1fr;
 
     grid-template-rows: repeat(1, auto);
 
     grid-auto-flow: row;
 
+    
     gap: 50px 20px;
+
+    @media (max-width: 2000px) {
+
+        width: 80%;
+        padding-left: 100px;
+
+    }
+
+    @media (max-width: 1700px) {
+
+        width: 90%;
+        
+
+    }
+
+     @media (max-width: 1400px) {
+
+        width: 100%;
+
+        padding-left: 150px;
+        
+
+    }
+
+    
+
+    @media (max-width: 1050px) {
+        
+        padding-left: 100px;
+        
+
+    }
+
+    @media (max-width: 900px) {
+        
+        padding-left: 70px;
+        
+
+    }
+
+    @media (max-width: 800px) {
+        
+        grid-template-areas:
+        "area1 area2";
+
+        grid-template-columns: 1fr 1fr;
+
+        grid-template-rows: repeat(1, auto);
+        
+        padding: 80px 20px 80px 120px;
+
+    }
+
+    @media (max-width: 750px) {
+        
+        padding-left: 100px;
+        
+
+    }
+
+    @media (max-width: 650px) {
+        
+        padding-left: 60px;
+        
+
+    }
+
+    @media (max-width: 550px) {
+        
+        padding-left: 50px;
+        
+
+    }
+
+    @media (max-width: 500px) {
+        
+        grid-template-areas:
+        "area1";
+
+        grid-template-columns: 1fr;
+
+        grid-template-rows: repeat(1, auto);
+        
+        padding: 50px 20px 50px 100px;
+
+        gap: 20px 20px;
+
+    }
+
+    @media (max-width: 400px) {
+               
+       padding-left: 50px;
+     
+
+    }
+
+   
 
 `;
 
@@ -68,6 +177,20 @@ const StyledListItem = styled.li`
     grid-row: auto;
 
     grid-column: auto;
+
+     @media (max-width: 1400px) {
+
+        font-size: 20px;
+        
+
+    }
+
+     @media (max-width: 550px) {
+
+        font-size: 16px;
+        
+
+    }
 
 `;
 
