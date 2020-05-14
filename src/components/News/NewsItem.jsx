@@ -64,6 +64,17 @@ const StyledTitle = styled.h6`
 
    color: ${props => props.theme.colorMainBlueDark};
 
+   transition: all .3s linear;
+
+   cursor: pointer;
+
+   &:hover {
+
+        color: ${props => props.theme.colorMainBlueClear1};
+
+        
+   }
+
 `;
 
 const StyledContent = styled.p`
