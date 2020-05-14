@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { graphql, useStaticQuery } from 'gatsby';
 import WeOfferItem from './WeOfferItem';
+import ScrollAdvisor from '../ScrollAdvisor/ScrollAdvisor';
 
 
 const StyledContainer = styled.section`
@@ -11,6 +12,8 @@ const StyledContainer = styled.section`
     padding: 50px 0;
 
     background-color: ${props => props.theme.colorMainBlueDark};
+
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 
 `;
 
@@ -25,6 +28,8 @@ const StyledTitle = styled.h3`
     padding: 20px 0;
 
     text-align: center;
+
+    letter-spacing: 2px;
 
 `;
 
@@ -51,11 +56,11 @@ const StyledList = styled.ul`
 
 
 
-const FeaturesList = ({ featuresList }) => {
+const FeaturesList = ({ featuresList, play }) => {
 
     return featuresList.map((feature, index) => {
         return(
-            <WeOfferItem key={index} itemData={feature} />
+            <WeOfferItem key={index} itemData={feature} play={play} />
         );
     });
 
@@ -64,6 +69,7 @@ const FeaturesList = ({ featuresList }) => {
 
 function Weoffer() {
 
+    
     const data = useStaticQuery(graphql`
         query {
             allWeofferJson {
@@ -83,12 +89,20 @@ function Weoffer() {
 
 
     return (
-        <StyledContainer>
-            <StyledTitle>{title}</StyledTitle>
-            <StyledList>
-                <FeaturesList featuresList={offerList} />
-            </StyledList>
-        </StyledContainer>
+        <ScrollAdvisor>
+            {(playAnimation, refElement) => {
+
+                return (
+                    <StyledContainer>
+                        <StyledTitle>{title}</StyledTitle>
+                        <StyledList ref={refElement}>
+                        <FeaturesList featuresList={offerList} play={playAnimation} />
+                        </StyledList>
+                    </StyledContainer>
+                );
+
+            }}
+        </ScrollAdvisor>        
     );
 }
 

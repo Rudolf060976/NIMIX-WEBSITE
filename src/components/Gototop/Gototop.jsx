@@ -1,17 +1,37 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
+import { Link, Events, scrollSpy } from 'react-scroll';
 
 const StyledContainer = styled.div`
 
     width: 100;
 
-    height: 40px;
+    padding: 20px 0;
 
-    background-color: lightcoral;
+    background-color: ${props => props.theme.colorMainYellow};
+
+    color: ${props => props.theme.colorMainBlueDark};
 
     text-align: center;
 
-    font-size: 28px;
+    font-size: 24px;
+
+    font-family: Roboto, sans-serif, Verdana, Geneva, Tahoma;
+
+    font-weight: 700;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+`;
+
+const StyledLink = styled(Link)`
+
+    display: block;        
+    cursor: pointer;
 
 `;
 
@@ -19,9 +39,32 @@ const StyledContainer = styled.div`
 
 
 function Gototop() {
+
+    useEffect(() => {
+        
+        Events.scrollEvent.register('begin', function(to, element) {
+            console.log("begin", arguments);
+          });
+       
+        Events.scrollEvent.register('end', function(to, element) {
+            console.log("end", arguments);
+          });
+       
+        scrollSpy.update();
+
+
+        return () => {
+            
+            Events.scrollEvent.remove('begin');
+            Events.scrollEvent.remove('end');
+
+        }
+    },[]);
+
+
     return (
         <StyledContainer>
-            Go to Top
+            <StyledLink to="home-scroll-point" smooth={true} duration={700}>Ir al Principio</StyledLink>
         </StyledContainer>
     );
 }

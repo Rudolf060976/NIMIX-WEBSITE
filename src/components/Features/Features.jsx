@@ -74,9 +74,26 @@ const StyledListItem = styled.li`
 const StyledIcon = styled.span`
 
 
-    color: ${props => props.theme.colorMainBlueClear1};
+    color: ${props => props.theme.colorMainYellow};
 
-    margin-right: 10px;
+    margin-right: 15px;
+
+    transition: all .3s linear;
+
+    & svg {
+
+        transition: all .3s linear;
+
+    }
+
+
+    &:hover svg {
+
+        transform: translateX(5px) scale(1.1);   
+
+        color: ${props => props.theme.colorMainBlueClear1};           
+    }
+
 `;
 
 
@@ -93,6 +110,7 @@ const FeaturesList = ({ featuresList }) => {
 
 function Features() {
 
+    
     const data = useStaticQuery(graphql`
         query {
             allFeaturesJson {

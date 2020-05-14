@@ -27,7 +27,7 @@ const Layout = ({ children, backImage }) => {
 
   return (
     <ThemeProvider theme={theme}> 
-        <StyledContainer backImage={backImage}>
+        <StyledContainer backImage={backImage} id="home-scroll-point">
           <Header />
           <main>{children}</main>             
           <Footer />

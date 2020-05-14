@@ -5,19 +5,28 @@ import moment from 'moment';
 import NewsItem from './NewsItem';
 
 
+
 const StyledContainer = styled.section`
 
     width: 100%;
 
-    padding: 30px 0;
+    padding: 60px 0;
+
+    background-color: ${props => props.theme.colorMainGreenDark};
+
+    clip-path: polygon(0% 0%, 100% 5%, 100% 100%, 0% 100%);
 
 `;
 
-const StyledTitle = styled.h1`
+const StyledTitle = styled.h3`
 
     width: 100%;
     text-align: center;
+    color: white;
+    padding: 30px 0;
+    font-family: Roboto, sans-serif, Verdana, Geneva, Tahoma;
 
+    letter-spacing: 2px;
 `;
 
 

@@ -24,8 +24,7 @@ const StyledTitle = styled.h3`
 
     color: ${props => props.theme.colorMainBlueDark};
 
-
-
+    
 `;
 
 const StyledList = styled.ul`
@@ -33,9 +32,10 @@ const StyledList = styled.ul`
     width: 80%;
     margin: 0 auto;
     list-style-type: none;
-
+    
+    padding: 100px 20px;
+    
     display: grid;
-
     grid-template-areas:
     "area1 ..."
     "...   area2"
@@ -46,6 +46,10 @@ const StyledList = styled.ul`
     grid-template-columns: 1fr 1fr;
 
     grid-template-rows: repeat(5, auto);    
+
+    gap: 20px 0;
+
+    justify-items: center;
 
 `;
 

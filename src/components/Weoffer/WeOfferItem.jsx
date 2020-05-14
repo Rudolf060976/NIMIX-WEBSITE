@@ -1,5 +1,47 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+
+const imageAnimation = keyframes`
+
+    from {
+
+        opacity: 0;
+
+        filter: blur(10px);
+
+    }
+
+    to {
+
+        opacity: 1;
+        filter: blur(0px);
+
+    }
+
+
+`;
+
+
+const titleAnimation = keyframes`
+
+    from {
+
+        opacity: 0;
+        transform: translateY(-30px);
+
+    }
+
+    to {
+
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+
+
+`;
+
 
 
 const StyledContainer = styled.li`
@@ -27,6 +69,16 @@ const StyledImage = styled.img`
 
     transition: all .5s linear;
 
+    opacity: 0;
+
+    animation-name: ${props => props.play ? imageAnimation : 'none'};
+
+    animation-duration: 1s;
+
+    animation-fill-mode: forwards;
+
+    animation-delay: .4s;
+
     &:hover {
         transform: scale(1.1);
 
@@ -40,10 +92,8 @@ const StyledContent = styled.h6`
     font-family: Roboto, sans-serif, Verdana, Geneva, Tahoma;
 
     font-size: 24px;
-
-    font-weight: 700;
-
-    color: ${props => props.theme.colorMainBlueClear2};
+    
+    color: ${props => props.theme.colorMainWhite};
 
     margin-top: 20px;
 
@@ -51,14 +101,31 @@ const StyledContent = styled.h6`
 
     line-height: 30px;
 
+    letter-spacing: 1.2px;
+
+    word-spacing: 2px;
+
+    opacity: 0;
+    
+    transform: translateY(-30px);
+
+    animation-name: ${props => props.play ? titleAnimation : 'none'};
+
+    animation-duration: 1s;
+
+    animation-fill-mode: forwards;
+
+    animation-delay: .4s;
+
+
 `;
 
 
-function WeOfferItem({ itemData }) {
+function WeOfferItem({ itemData, play }) {
     return (
         <StyledContainer>
-            <StyledImage src={itemData.image} />
-            <StyledContent>{itemData.offer_name}</StyledContent>
+            <StyledImage src={itemData.image} play={play} />
+            <StyledContent play={play}>{itemData.offer_name}</StyledContent>
         </StyledContainer>
     );
 }
