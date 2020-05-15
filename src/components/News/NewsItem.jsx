@@ -24,12 +24,6 @@ const StyledContainer = styled.li`
 
      @media (max-width: 1650px) {
 
-        height: 580px;        
-
-    }    
-
-    @media (max-width: 1500px) {
-
         height: 600px;        
 
     }    
@@ -48,7 +42,7 @@ const StyledContainer = styled.li`
 
      @media (max-width: 300px) {
 
-        height: 630px;        
+        height: 620px;        
 
     }    
 
@@ -118,7 +112,7 @@ const StyledTitle = styled.h6`
 
    cursor: pointer;
 
-   line-height: 24px;
+   line-height: 30px;
 
    &:hover {
 
