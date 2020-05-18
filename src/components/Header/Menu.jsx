@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'gatsby';
 
 const animationOpen = keyframes`
 
@@ -131,7 +132,7 @@ const StyledMenuListItem = styled.li`
 `;
 
 
-const StyledMenuLink = styled.a`
+const StyledMenuLink = styled(Link)`
 
     display: block;
 
@@ -218,22 +219,22 @@ function Menu({ openMenu, handleCloseMenu }) {
             </StyledCloseButton>
             <StyledMenuList>
                 <StyledMenuListItem>
-                    <StyledMenuLink href="#">
+                    <StyledMenuLink to="#">
                         Tipos de Negocio
                     </StyledMenuLink>                    
                 </StyledMenuListItem>
                 <StyledMenuListItem>
-                    <StyledMenuLink href="#">
+                    <StyledMenuLink to="#">
                         Preguntas Frecuentes
                     </StyledMenuLink>                    
                 </StyledMenuListItem>
                 <StyledMenuListItem>
-                    <StyledMenuLink href="#">
+                    <StyledMenuLink to="#">
                         Contacto
                     </StyledMenuLink>                    
                 </StyledMenuListItem>
                 <StyledMenuListItem>
-                    <StyledMenuLink href="#">
+                    <StyledMenuLink to="/app/tutoriales">
                         Tutoriales
                     </StyledMenuLink>                    
                 </StyledMenuListItem>

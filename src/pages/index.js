@@ -8,11 +8,17 @@ import Weoffer from "../components/Weoffer/Weoffer";
 import Whytobuy from "../components/Whytobuy/Whytobuy";
 import News from "../components/News/News";
 import Gototop from "../components/Gototop/Gototop";
-//import image from '../images/BACK1.jpg';
+import { useAuth0 } from '../auth/react-auth0-wrapper';
 
 
-const IndexPage = () => (
-  <Layout >
+const IndexPage = () => {
+
+  const { loading } = useAuth0();
+
+  if (loading) return <div>Loading ...</div>;
+
+  return (
+    <Layout >    
     <SEO title="Home" />    
     <HomeGallery />
     <Features />
@@ -20,7 +26,10 @@ const IndexPage = () => (
     <Whytobuy />
     <News />
     <Gototop />
-  </Layout>
-);
+    </Layout>
+  );
+
+
+}
 
 export default IndexPage;
