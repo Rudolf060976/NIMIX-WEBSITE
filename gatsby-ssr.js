@@ -7,7 +7,7 @@ import { navigate } from 'gatsby';
 const onRedirectCallback = appState => {
     navigate(appState && appState.targetUrl
         ? appState.targetUrl
-        : window.location.pathname
+        : null
     );
    /* history.push(
       appState && appState.targetUrl
@@ -23,7 +23,7 @@ export const wrapRootElement = ({ element }) => {
         <Auth0Provider
             domain={config.domain}
             client_id={config.clientId}               
-            redirect_uri={window.location.origin} // ESTA ES LA UBICACION DONDE ME ENCUENTRO CADA VEZ QUE HAGO UNA LLAMADA A loginWithRedirect Y ASI AUTH0 SABE A DONDE REGRESAR AL TERMINAR DE AUTENTICAR
+            redirect_uri={} // ESTA ES LA UBICACION DONDE ME ENCUENTRO CADA VEZ QUE HAGO UNA LLAMADA A loginWithRedirect Y ASI AUTH0 SABE A DONDE REGRESAR AL TERMINAR DE AUTENTICAR
             onRedirectCallback={onRedirectCallback}      //  PERMITE REDIRECCIONAR DESPUES DE AUTENTICAR AL SITIO DONDE ME ENCONTRABA ANTES DE PASAR A AUTH0
         >
             {element}
