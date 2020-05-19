@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Default() {
+function NotFound() {
     return (
         <div>
             HELLO FROM DEFAULT      
@@ -8,4 +8,4 @@ function Default() {
     );
 }
 
-export default Default;
+export default NotFound;
