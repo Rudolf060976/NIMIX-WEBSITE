@@ -1,4 +1,1 @@
-/app/login  /app/login  200
-/app/signin  /app/signin  200
-/app/tutoriales  /app/tutoriales  200
-/app/*  /app    200
+/app/*  /app  301
