@@ -15,8 +15,8 @@ const PrivateRoute = ({ component: Component, location, ...rest }) => {
   if (loading) return <div>Loading...</div>; //IMPORTANTE!!!!! PORQUE SI SE HACE CLICK AL BACK BUTTON DEL NAVEGADOR O SI SE REFRESCA LA PAGINA, SE TIENE QUE VOLVER A CARGAR EL COMPONENTE AUTH0 WRAPPER
 
   if (!isAuthenticated) {
-
-    loginWithRedirect({});
+    
+    loginWithRedirect({redirect_uri: (window.location.origin + location.pathname)});
 
     return null;
   } 

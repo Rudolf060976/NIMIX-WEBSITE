@@ -11,6 +11,7 @@ import React from 'react';
 import { navigate } from 'gatsby';
 
 const onRedirectCallback = appState => {
+    
     navigate(appState && appState.targetUrl
         ? appState.targetUrl
         : window.location.pathname

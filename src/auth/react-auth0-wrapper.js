@@ -11,6 +11,8 @@ export const Auth0Context = React.createContext();  // LO USAMOS CON EL PROVIDER
 export const useAuth0 = () => useContext(Auth0Context); // ESTE ES EL EL OBJETO CONTEXT QUE VOY A UTILIZAR EN TODOS MIS COMPONENTES PARA TENER ACCESO AL Auth0Provider. PODRIA NO EXPORTARLO ENTONCES EN CADA
 //COMPONENTE HABRIA QUE IMPORTAR useContext Y USARLO. CON ESTO NO ES NECESARIO
 
+const isBrowser = typeof window !== "undefined";
+
 export const Auth0Provider = ({
   children,
   onRedirectCallback = DEFAULT_REDIRECT_CALLBACK, //VALOR POR DEFECTO...
@@ -71,23 +73,35 @@ export const Auth0Provider = ({
     setUser(user);
   };
   return (
-    <Auth0Context.Provider
-      value={{
-        isAuthenticated,
-        user,
-        loading,
-        popupOpen,
-        loginWithPopup,
-        handleRedirectCallback,
-        getIdTokenClaims: (...p) => auth0Client.getIdTokenClaims(...p),
-        loginWithRedirect: (...p) => auth0Client.loginWithRedirect(...p),
-        getTokenSilently: (...p) => auth0Client.getTokenSilently(...p),
-        getTokenWithPopup: (...p) => auth0Client.getTokenWithPopup(...p),
-        logout: (...p) => auth0Client.logout(...p)
-      }}
-    >
-      {children}
-    </Auth0Context.Provider>
+    <>
+    {isBrowser ?
+        <Auth0Context.Provider
+          value={{
+            isAuthenticated,
+            user,
+            loading,
+            popupOpen,
+            loginWithPopup,
+            handleRedirectCallback,
+            getIdTokenClaims: (...p) => auth0Client.getIdTokenClaims(...p),
+            loginWithRedirect: (...p) => auth0Client.loginWithRedirect(...p),
+            getTokenSilently: (...p) => auth0Client.getTokenSilently(...p),
+            getTokenWithPopup: (...p) => auth0Client.getTokenWithPopup(...p),
+            logout: (...p) => auth0Client.logout(...p)
+          }}
+        >
+          {children}
+        </Auth0Context.Provider>
+        :
+        <Auth0Context.Provider
+          value={{
+            loading: false
+          }}
+        >
+          {children}
+        </Auth0Context.Provider>    
+    }
+    </>
   );
 };
 
