@@ -16,7 +16,7 @@ function app() {
             <PrivateRoute path="/tutoriales" component={Tutoriales} />            
             <SignIn path="/signin" />
             <Login path="/login" />  
-            <NotFound default />                  
+            <NotFound path="/:route" />                  
         </Router>
     );
 }
