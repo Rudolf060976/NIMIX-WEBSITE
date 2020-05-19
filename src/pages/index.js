@@ -13,10 +13,11 @@ import { useAuth0 } from '../auth/react-auth0-wrapper';
 
 const IndexPage = () => {
  
-
-  const { loading } = useAuth0();
-
-  if (loading) return <div>Loading ....</div>;   
+  const isBrowser = typeof window !== "undefined";
+  
+  const auth0 = useAuth0();
+  
+  if (isBrowser && auth0 && auth0.loading) return <div>Loading ....</div>;   
 
   return (
     <Layout >      

@@ -11,14 +11,8 @@ export const Auth0Context = React.createContext();  // LO USAMOS CON EL PROVIDER
 export const useAuth0 = () => useContext(Auth0Context); // ESTE ES EL EL OBJETO CONTEXT QUE VOY A UTILIZAR EN TODOS MIS COMPONENTES PARA TENER ACCESO AL Auth0Provider. PODRIA NO EXPORTARLO ENTONCES EN CADA
 //COMPONENTE HABRIA QUE IMPORTAR useContext Y USARLO. CON ESTO NO ES NECESARIO
 
-const isBrowser = typeof window !== "undefined";
 
-
-let Auth0Provider = null;
-
-if (isBrowser) {
-
-  Auth0Provider = ({
+  export const Auth0Provider = ({
     children,
     onRedirectCallback = DEFAULT_REDIRECT_CALLBACK, //VALOR POR DEFECTO...
     ...initOptions
@@ -97,28 +91,6 @@ if (isBrowser) {
           </Auth0Context.Provider> 
     );
   };
-
-} else {
-
-  Auth0Provider=({children}) => {
-    
-      return(
-        <Auth0Context.Provider
-          value={{
-          loading: false,
-          logout: () => null
-          }}
-        >
-          {children}
-        </Auth0Context.Provider>    
-    );
-  };
-
-}
-
-export { Auth0Provider };
-
-
 
 // AL FINAL, OBTENGO UN OBJETO value QUE PUEDO UTILIZAR EN TODOS LOS COMPONENTES EN EL TREE...
 
