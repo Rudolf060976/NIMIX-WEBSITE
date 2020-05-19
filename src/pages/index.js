@@ -19,7 +19,7 @@ const IndexPage = () => {
   if (loading) return <div>Loading ....</div>;   
 
   return (
-    <Layout >    
+    <Layout >      
     <SEO title="Home" />    
     <HomeGallery />
     <Features />

@@ -7,12 +7,13 @@ import Default from '../components/Default/Default';
 import PrivateRoute from '../components/PrivateRoute/PrivateRoute';
 
 
+
 function app() {
     return (
         <Router basepath="/app">
             <PrivateRoute path="/tutoriales" component={Tutoriales} />            
             <SignIn path="/signin" />
-            <Login path="/login" />
+            <Login path="/login" />            
             <Default path="/*"/>
         </Router>
     );

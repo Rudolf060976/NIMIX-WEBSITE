@@ -95,7 +95,8 @@ export const Auth0Provider = ({
         :
         <Auth0Context.Provider
           value={{
-            loading: false
+            loading: false,
+            logout: () => null
           }}
         >
           {children}

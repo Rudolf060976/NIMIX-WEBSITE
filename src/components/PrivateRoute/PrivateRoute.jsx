@@ -16,9 +16,10 @@ const PrivateRoute = ({ component: Component, location, ...rest }) => {
 
   if (!isAuthenticated) {
     
-    loginWithRedirect({redirect_uri: (window.location.origin + location.pathname)});
-
-    return null;
+      loginWithRedirect({redirect_uri: (window.location.origin + location.pathname)});
+            
+      return null;
+      
   } 
 
   return (<Component {...rest} />);
