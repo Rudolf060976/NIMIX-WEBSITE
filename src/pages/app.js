@@ -13,8 +13,7 @@ function app() {
         <Router basepath="/app">            
             <PrivateRoute path="/tutoriales" component={Tutoriales} />            
             <SignIn path="/signin" />
-            <Login path="/login" /> 
-            <NotFound default />       
+            <Login path="/login" />             
         </Router>
     );
 }
