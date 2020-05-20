@@ -1,3 +1,76 @@
 {
-    
+  "imageslist": [
+    {
+      "image": "/images/uploads/rest_1.jpg"
+    },
+    {
+      "image": "/images/uploads/rest_2.jpg"
+    },
+    {
+      "image": "/images/uploads/rest_3.jpg"
+    },
+    {
+      "image": "/images/uploads/rest_4.jpg"
+    },
+    {
+      "image": "/images/uploads/rest_5.jpg"
+    }
+  ],
+  "title": "¡ Administrar tu Restaurante ahora es más fácil !",
+  "functions": [
+    {
+      "function": "Control de múltiples ambientes (salón, barra, restaurante, piscina, lobby, etc.)."
+    },
+    {
+      "function": "Ubicación de mesas configurable en cada ambiente."
+    },
+    {
+      "function": "Operación táctil (Touch Screen) fácil y rápida."
+    },
+    {
+      "function": "Control de consumo en Mesas y Venta Directa."
+    },
+    {
+      "function": "Módulo de mesoneros para ingresar comandas."
+    },
+    {
+      "function": "Compatibilidad con Impresoras Fiscales."
+    },
+    {
+      "function": "Impresión de comandas configurable por area (cocina, barra, asado, etc.)."
+    },
+    {
+      "function": "Escalable a múltiples cajas y puntos de pedido (mesoneros)."
+    },
+    {
+      "function": "Impresión de Nota de Consumo (cuenta)."
+    },
+    {
+      "function": "División de Cuenta en Mesa (entre varios clientes)."
+    },
+    {
+      "function": "Manejo de Inventario de Insumos, recetas de platos, mermas, costos."
+    },
+    {
+      "function": "Compras, Gastos, Cuentas, Retenciones, Libros."
+    },
+    {
+      "function": "Control de consumos Internos de empleados y socios."
+    },
+    {
+      "function": "Manejo de propinas, ingresos y egresos de efectivo en caja."
+    },
+    {
+      "function": "Variedad de Reportes Administrativos propios de Restaurantes."
+    },
+    {
+      "function": "Conexión Remota vía web."
+    },
+    {
+      "function": "Seguridad integrada por usuario."
+    },
+    {
+      "function": "Y muchas otras funciones..."
+    }
+  ]
 }
