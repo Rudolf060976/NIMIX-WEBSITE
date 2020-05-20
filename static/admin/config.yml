@@ -19,7 +19,7 @@ collections:
       - {label: "Feature Image", name: "header_image", widget: "image"}      
       - {label: "Body", name: "body", widget: "markdown"}
 
-  - label: "Index Page"
+  - label: "Página Home"
     name: "index"
     files:
       - label: "Slide Images"
@@ -28,7 +28,7 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Image", name: "image", widget: "image"}
-      - label: "Features"
+      - label: "Características"
         name: "features"
         file: "site/content/features/features.json"
         fields:
@@ -38,7 +38,7 @@ collections:
             widget: "list"
             fields:
               - {label: "Feature Name", name: "feature_name", widget: "string"}
-      - label: "We Offer"
+      - label: "Ofrecemos"
         name: "we_offer"
         file: "site/content/weoffer/weoffer.json"
         fields:
@@ -49,7 +49,7 @@ collections:
             fields:
               - {label: "Offer Name", name: "offer_name", widget: "string"}
               - {label: "Image", name: "image", widget: "image"}                                    
-      - label: "Why to Buy"
+      - label: "Por qué Comprar"
         name: "whytobuy"
         file: "site/content/whytobuy/whytobuy.json"
         fields:
@@ -60,6 +60,67 @@ collections:
             fields:
               - {label: "Reason", name: "reason", widget: "string"}   
               - {label: "Description", name: "description", widget: "string"}
-              - {label: "Image", name: "image", widget: "image"}                 
-              
-
+              - {label: "Image", name: "image", widget: "image"}      
+  - label: "Página: Tipos de Negocios"
+    name: "tiposnegocios"
+    files:    
+      - label: "Restaurante"
+        name: "restaurant"
+        file: "site/content/restaurant/restaurant.json"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - label: "Lista de Imágenes"
+            name: "imageslist"
+            widget: "list"
+            fields:              
+              - {label: "Image", name: "image", widget: "image"}
+          - label: "Lista de Funciones"
+            name: "functions"
+            widget: "list"
+            fields:
+              - {label: "Function", name: "function", widget: "string"}               
+      - label: "Ferreterías"
+        name: "hardwarestore"
+        file: "site/content/hardwarestore/hardwarestore.json"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - label: "Lista de Imágenes"
+            name: "imageslist"
+            widget: "list"
+            fields:              
+              - {label: "Image", name: "image", widget: "image"}
+          - label: "Lista de Funciones"
+            name: "functions"
+            widget: "list"
+            fields:
+              - {label: "Function", name: "function", widget: "string"}
+      - label: "Bodegones y Licorerías"
+        name: "liquorstore"
+        file: "site/content/liquorstore/liquorstore.json"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - label: "Lista de Imágenes"
+            name: "imageslist"
+            widget: "list"
+            fields:              
+              - {label: "Image", name: "image", widget: "image"}
+          - label: "Lista de Funciones"
+            name: "functions"
+            widget: "list"
+            fields:
+              - {label: "Function", name: "function", widget: "string"}                              
+      - label: "Tiendas y Franquicias"
+        name: "shops"
+        file: "site/content/shops/shops.json"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - label: "Lista de Imágenes"
+            name: "imageslist"
+            widget: "list"
+            fields:              
+              - {label: "Image", name: "image", widget: "image"}
+          - label: "Lista de Funciones"
+            name: "functions"
+            widget: "list"
+            fields:
+              - {label: "Function", name: "function", widget: "string"}               

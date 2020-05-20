@@ -4,7 +4,7 @@ import Image from 'gatsby-image';
 import { graphql, useStaticQuery } from 'gatsby';
 import Menu from './Menu';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import { Link } from 'gatsby';
 
 const logoAnimation = keyframes`
 
@@ -243,10 +243,12 @@ function Header() {
 
     return (
         <StyledContainer>
-            { openMenu ? null : menuIcon() }   
-            <StyledLogoContainer>
-                <StyledLogo fluid={imageData} />
-            </StyledLogoContainer>
+            { openMenu ? null : menuIcon() }            
+                <StyledLogoContainer>
+                    <Link to="/">
+                        <StyledLogo fluid={imageData} />
+                    </Link>   
+                </StyledLogoContainer>        
             <Menu openMenu={openMenu} handleCloseMenu={handleCloseMenuClick} />
         </StyledContainer>
     );

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 
 const StyledContainer = styled.section`
 
@@ -46,7 +47,7 @@ const StyledListItem = styled.li`
 
 `;
 
-const StyledLink = styled.a`
+const StyledLink = styled(Link)`
 
     color: white;
 
@@ -55,6 +56,8 @@ const StyledLink = styled.a`
     transition: all .3s linear;
 
     cursor: pointer;
+
+    text-decoration: none;
 
     &:hover {
 
@@ -106,23 +109,23 @@ function Footer() {
         <StyledContainer>
             <StyledList>
                 <StyledListItem>
-                    <StyledLink>
+                    <StyledLink to="/">
                         Tipos de Negocio
                     </StyledLink>
                 </StyledListItem>
                 <StyledListItem>
-                    <StyledLink>
+                    <StyledLink to="/">
                         Preguntas Frecuentes
                     </StyledLink>
                 </StyledListItem>
                 <StyledListItem>
-                    <StyledLink>
+                    <StyledLink to="/">
                         Contacto
                     </StyledLink>
                 </StyledListItem>
                 <StyledListItem>
-                    <StyledLink>
-                        Tutoriales
+                    <StyledLink to="/app/clientes">
+                        Area de Clientes
                     </StyledLink>
                 </StyledListItem>
             </StyledList>

@@ -95,7 +95,7 @@ function News() {
                 nodes {
                     id
                     frontmatter {
-                     title
+                        title
                         date (formatString: "DD-MM-YYYY")
                         description
                         image:header_image        
@@ -113,7 +113,7 @@ function News() {
     
             const today = moment();
     
-            return (postDate.add(7,"days").format("X") >= today.format("X"));  // SOLO SELECCIONA LOS POSTS DE LOS ULTIMOS 7 DIAS
+            return (postDate.add(30,"days").format("X") >= today.format("X"));  // SOLO SELECCIONA LOS POSTS DE LOS ULTIMOS 7 DIAS
         });
 
         const outputArray = [];

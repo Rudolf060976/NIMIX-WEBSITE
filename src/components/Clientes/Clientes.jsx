@@ -2,7 +2,7 @@ import React from 'react';
 
 import { useAuth0 } from '../../auth/react-auth0-wrapper';
 
-function Tutoriales() {
+function Clientes() {
 
     const { logout } = useAuth0();
 
@@ -16,4 +16,4 @@ function Tutoriales() {
     );
 }
 
-export default Tutoriales;
+export default Clientes;

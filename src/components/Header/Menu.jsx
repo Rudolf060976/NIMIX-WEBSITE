@@ -219,12 +219,12 @@ function Menu({ openMenu, handleCloseMenu }) {
             </StyledCloseButton>
             <StyledMenuList>
                 <StyledMenuListItem>
-                    <StyledMenuLink to="#">
+                    <StyledMenuLink to="/tiposnegocios">
                         Tipos de Negocio
                     </StyledMenuLink>                    
                 </StyledMenuListItem>
                 <StyledMenuListItem>
-                    <StyledMenuLink to="#">
+                    <StyledMenuLink to="/preguntas">
                         Preguntas Frecuentes
                     </StyledMenuLink>                    
                 </StyledMenuListItem>
@@ -234,8 +234,8 @@ function Menu({ openMenu, handleCloseMenu }) {
                     </StyledMenuLink>                    
                 </StyledMenuListItem>
                 <StyledMenuListItem>
-                    <StyledMenuLink to="/app/tutoriales">
-                        Tutoriales
+                    <StyledMenuLink to="/app/clientes">
+                        Area de Clientes
                     </StyledMenuLink>                    
                 </StyledMenuListItem>
             </StyledMenuList>
