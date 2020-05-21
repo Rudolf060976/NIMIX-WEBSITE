@@ -1,24 +1,73 @@
-import React from 'react';
+import React,{ useState } from 'react';
 import styled from 'styled-components';
 import Layout from '../components/layout';
+import Selector from '../components/TipoNegocio/Selector';
+import TipoNegocio from '../components/TipoNegocio/TipoNegocio';
 
 
 const StyledContainer = styled.section`
 
     width: 100%;
 
+    display: flex;
+
+    justify-content: center;
+
+    padding: 80px 0 100px 0;
+
+    position: relative;
 
 `;
 
 
-function tiposnegocios() {
+
+function Tiposnegocios() {
+
+    const [selectedItem, setSelectedItem] = useState('restaurant');
+
+
+    const handleSelected = index => {
+
+        switch (index) {
+            case 0:
+                
+                setSelectedItem('restaurant');
+
+                break;
+        
+            case 1:
+                
+                setSelectedItem('hardwarestore');
+                    
+                break;
+
+            case 2:
+                
+                setSelectedItem('liquorstore');
+                    
+                break;
+            case 3:
+                
+                setSelectedItem('shops');
+                        
+                break;            
+                
+            default:
+
+                setSelectedItem('restaurant');
+                break;
+        }
+    };
+    
+
     return (
-        <Layout>
+        <Layout selectedIndex={0}>
             <StyledContainer>
-                HELLO FROM TIPOS DE NEGOCIOS
+                <Selector handleSelectedItem={handleSelected} />
+                <TipoNegocio type={selectedItem} />
             </StyledContainer>            
         </Layout>
     );
 }
 
-export default tiposnegocios;
+export default Tiposnegocios;

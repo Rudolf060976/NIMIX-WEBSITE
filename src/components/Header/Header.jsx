@@ -203,7 +203,7 @@ const StyledLogo = styled(Image)`
 `;
 
 
-function Header() {
+function Header({ selectedIndex }) {
 
     const [openMenu, setOpenMenu] = useState(false);
 
@@ -249,7 +249,7 @@ function Header() {
                         <StyledLogo fluid={imageData} />
                     </Link>   
                 </StyledLogoContainer>        
-            <Menu openMenu={openMenu} handleCloseMenu={handleCloseMenuClick} />
+            <Menu openMenu={openMenu} handleCloseMenu={handleCloseMenuClick} selectedIndex={selectedIndex} />
         </StyledContainer>
     );
 }

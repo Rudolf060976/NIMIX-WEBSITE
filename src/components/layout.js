@@ -23,12 +23,12 @@ const StyledContainer = styled.div`
     
 `;
 
-const Layout = ({ children, backImage }) => {
+const Layout = ({ children, backImage, selectedIndex }) => {
 
   return (
     <ThemeProvider theme={theme}> 
         <StyledContainer backImage={backImage} id="home-scroll-point">
-          <Header />
+          <Header selectedIndex={selectedIndex} />
           <main>{children}</main>             
           <Footer />
         </StyledContainer>        

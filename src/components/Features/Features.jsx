@@ -28,6 +28,8 @@ const StyledTitle = styled.h3`
 
     line-height: 42px;
 
+    box-shadow: 0px 5px 5px gray;
+
     @media (max-width: 500px) {
 
         line-height: 30px;

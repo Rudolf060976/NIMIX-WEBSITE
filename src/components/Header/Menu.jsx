@@ -33,7 +33,7 @@ from {
 const StyledContainer = styled.nav`
 
     flex: 1 1 40%;
-
+    
     @media (max-width: 700px) {
 
         width: 100%;
@@ -104,6 +104,8 @@ const StyledMenuList = styled.ul`
 
     border-radius: 10px;
 
+    box-shadow: 5px 5px 5px gray;
+
     @media (max-width: 800px) {
 
         padding: 10px 10px;
@@ -144,7 +146,7 @@ const StyledMenuLink = styled(Link)`
     
     text-decoration: none;
 
-    color: ${props => props.theme.colorMainWhite};
+    color: ${props => props.selected ? props.theme.colorMainYellow : props.theme.colorMainWhite};
     
     transition: all .3s linear;
     
@@ -154,7 +156,7 @@ const StyledMenuLink = styled(Link)`
 
         text-decoration: none;
 
-        color: ${props => props.theme.colorMainBlueClear1};
+        color: ${props => props.selected ? props.theme.colorMainYellos : props.theme.colorMainBlueClear1};
 
         @media (max-width: 500px) {
 
@@ -193,7 +195,7 @@ const StyledMenuLink = styled(Link)`
 `;
 
 
-function Menu({ openMenu, handleCloseMenu }) {
+function Menu({ openMenu, handleCloseMenu, selectedIndex }) {
 
     const [closeMenu, setCloseMenu] = useState(false);
 
@@ -219,22 +221,22 @@ function Menu({ openMenu, handleCloseMenu }) {
             </StyledCloseButton>
             <StyledMenuList>
                 <StyledMenuListItem>
-                    <StyledMenuLink to="/tiposnegocios">
+                    <StyledMenuLink to="/tiposnegocios" selected={selectedIndex === 0 ? true : false}>
                         Tipos de Negocio
                     </StyledMenuLink>                    
                 </StyledMenuListItem>
                 <StyledMenuListItem>
-                    <StyledMenuLink to="/preguntas">
+                    <StyledMenuLink to="/preguntas" selected={selectedIndex === 1 ? true : false}>
                         Preguntas Frecuentes
                     </StyledMenuLink>                    
                 </StyledMenuListItem>
                 <StyledMenuListItem>
-                    <StyledMenuLink to="#">
+                    <StyledMenuLink to="#" selected={selectedIndex === 2 ? true : false}>
                         Contacto
                     </StyledMenuLink>                    
                 </StyledMenuListItem>
                 <StyledMenuListItem>
-                    <StyledMenuLink to="/app/clientes">
+                    <StyledMenuLink to="/app/clientes" selected={selectedIndex === 3 ? true : false}>
                         Area de Clientes
                     </StyledMenuLink>                    
                 </StyledMenuListItem>

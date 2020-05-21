@@ -50,6 +50,34 @@ module.exports = {
         path: `${__dirname}/site/content/whytobuy`,
       }
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `restaurant`,
+        path: `${__dirname}/site/content/restaurant`,
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `hardwarestore`,
+        path: `${__dirname}/site/content/hardwarestore`,
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `liquorstore`,
+        path: `${__dirname}/site/content/liquorstore`,
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `shops`,
+        path: `${__dirname}/site/content/shops`,
+      }
+    },
     `gatsby-transformer-remark`,
     `gatsby-plugin-sass`,
     {

@@ -13,7 +13,10 @@ const StyledContainer = styled.section`
 
     background-color: ${props => props.theme.colorMainBlueDark};
 
+    border-top: 3px solid ${props => props.theme.colorMainYellow};
+
     clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+    
 
      @media (max-width: 750px) {
 
