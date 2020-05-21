@@ -1,3 +1,13 @@
 {
-    
+  "title": "Toma el control de tu negocio ferretero con las nuevas funciones de Nimix1",
+  "imageslist": [
+    {
+      "image": "/images/uploads/ferre_1.jpg"
+    }
+  ],
+  "functions": [
+    {
+      "function": "Facturación adaptable a modelo PV + CAJA o CAJA única."
+    }
+  ]
 }
