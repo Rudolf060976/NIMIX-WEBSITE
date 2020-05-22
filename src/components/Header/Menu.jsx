@@ -47,10 +47,11 @@ const StyledContainer = styled.nav`
     flex: 1 1 40%;
    
     
-    @media (max-width: 760px) {
+    @media (max-width: 850px) {
 
         width: 100%;
 
+        order: -1;
 
     }
 
@@ -303,22 +304,27 @@ function Menu({ openMenu, handleCloseMenu, selectedIndex }) {
             </StyledCloseButton>
             <StyledMenuList>
                 <StyledMenuListItem>
-                    <StyledMenuLink to="/tiposnegocios" selected={selectedIndex === 0 ? true : false} openMenu={openMenu}>
+                    <StyledMenuLink to="/" selected={selectedIndex === 0 ? true : false} openMenu={openMenu}>
+                        Home
+                    </StyledMenuLink>                    
+                </StyledMenuListItem>
+                <StyledMenuListItem>
+                    <StyledMenuLink to="/tiposnegocios" selected={selectedIndex === 1 ? true : false} openMenu={openMenu}>
                         Tipos de Negocio
                     </StyledMenuLink>                    
                 </StyledMenuListItem>
                 <StyledMenuListItem>
-                    <StyledMenuLink to="/preguntas" selected={selectedIndex === 1 ? true : false} openMenu={openMenu}>
+                    <StyledMenuLink to="/preguntas" selected={selectedIndex === 2 ? true : false} openMenu={openMenu}>
                         Preguntas Frecuentes
                     </StyledMenuLink>                    
                 </StyledMenuListItem>
                 <StyledMenuListItem>
-                    <StyledMenuLink to="#" selected={selectedIndex === 2 ? true : false} openMenu={openMenu}>
+                    <StyledMenuLink to="#" selected={selectedIndex === 3 ? true : false} openMenu={openMenu}>
                         Contacto
                     </StyledMenuLink>                    
                 </StyledMenuListItem>
                 <StyledMenuListItem>
-                    <StyledMenuLink to="/app/clientes" selected={selectedIndex === 3 ? true : false} openMenu={openMenu}>
+                    <StyledMenuLink to="/app/clientes" selected={selectedIndex === 4 ? true : false} openMenu={openMenu}>
                         Area de Clientes
                     </StyledMenuLink>                    
                 </StyledMenuListItem>

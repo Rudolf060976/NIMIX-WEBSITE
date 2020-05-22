@@ -93,7 +93,7 @@ function Tiposnegocios() {
     
 
     return (
-        <Layout selectedIndex={0}>
+        <Layout selectedIndex={1}>
             <StyledContainer>
                 <Selector handleSelectedItem={handleSelected} />
                 <TipoNegocio type={selectedItem} />                

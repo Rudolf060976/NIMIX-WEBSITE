@@ -20,7 +20,7 @@ const IndexPage = () => {
   if (isBrowser && auth0 && auth0.loading) return <div>Loading ....</div>;   
 
   return (
-    <Layout >      
+    <Layout selectedIndex={0} >      
     <SEO title="Home" />    
     <HomeGallery />
     <Features />

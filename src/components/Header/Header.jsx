@@ -49,7 +49,7 @@ const StyledContainer = styled.header`
 
     padding: 30px 20px 10px 20px;
 
-    @media (max-width: 760px) {
+    @media (max-width: 850px) {
 
         flex-flow: column nowrap;
 
@@ -130,7 +130,7 @@ const StyledLogoContainer = styled.div`
 
     }
 
-     @media (max-width: 760px) {
+     @media (max-width: 850px) {
 
         width: 100%;
         
@@ -142,7 +142,7 @@ const StyledLogoContainer = styled.div`
 
         align-items: center;
 
-        padding-bottom: 30px;
+        padding-top: 30px;
 
 
 
@@ -168,16 +168,29 @@ const StyledLogoContainer = styled.div`
     }
 
     @media (max-width: 400px) {
-        position: absolute;
+        
         top: 100px;
         left: 0;
         width: 100%;  
-        justify-content: center;   
+        justify-content: center;  
+        z-index: 500; 
 
     }
 
 
       
+`;
+
+const StyledLink = styled(Link)`
+
+@media (max-width: 400px) {
+    
+    display: block;
+
+    width: 200px;
+
+}
+
 `;
 
 
@@ -195,7 +208,7 @@ const StyledLogo = styled(Image)`
 
     animation-fill-mode: forwards;
 
-     @media (max-width: 760px) {
+     @media (max-width: 850px) {
 
         width: 200px;
         
@@ -203,6 +216,7 @@ const StyledLogo = styled(Image)`
      
 
 `;
+
 
 
 function Header({ selectedIndex }) {
@@ -247,9 +261,9 @@ function Header({ selectedIndex }) {
         <StyledContainer>
             { openMenu ? null : menuIcon() }            
                 <StyledLogoContainer>
-                    <Link to="/">
+                    <StyledLink to="/">
                         <StyledLogo fluid={imageData} />
-                    </Link>   
+                    </StyledLink>   
                 </StyledLogoContainer>        
             <Menu openMenu={openMenu} handleCloseMenu={handleCloseMenuClick} selectedIndex={selectedIndex} />
         </StyledContainer>
