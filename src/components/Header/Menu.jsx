@@ -45,6 +45,7 @@ const mobileLinkAnimation = keyframes`
 const StyledContainer = styled.nav`
 
     flex: 1 1 40%;
+   
     
     @media (max-width: 700px) {
 
@@ -111,6 +112,8 @@ const StyledMenuList = styled.ul`
 
     list-style-type: none;
 
+    background-color: ${props => props.theme.colorMainBlueDark};  
+
     padding: 10px 0;
 
     border-radius: 10px;
@@ -131,6 +134,8 @@ const StyledMenuList = styled.ul`
         box-shadow: none;
         
         padding: 70px 20px 0 80px;
+
+        background-color: transparent;
 
     }
 
