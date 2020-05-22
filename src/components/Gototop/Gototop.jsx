@@ -14,7 +14,7 @@ const StyledContainer = styled.div`
 
     text-align: center;
 
-    font-size: 24px;
+    font-size: 2.6rem;
 
     font-family: Roboto, sans-serif, Verdana, Geneva, Tahoma;
 

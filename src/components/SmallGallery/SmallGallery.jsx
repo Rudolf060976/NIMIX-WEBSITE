@@ -18,6 +18,60 @@ const StyledCenter = styled.div`
     height: 600px;
 
     margin: 0 auto;
+
+     @media (max-width: 2200px) {
+
+        height: 500px;
+
+    }
+
+    @media (max-width: 1800px) {
+
+        height: 400px;
+
+    }
+
+    @media (max-width: 1400px) {
+
+        height: 350px;
+
+    }
+
+    @media (max-width: 1300px) {
+
+        height: 500px;
+
+    }
+
+    @media (max-width: 1200px) {
+
+        height: 400px;
+
+    }
+
+     @media (max-width: 800px) {
+
+        height: 300px;
+
+    }
+
+     @media (max-width: 600px) {
+
+        height: 250px;
+
+    }
+
+     @media (max-width: 500px) {
+
+        height: 200px;
+
+    }
+
+     @media (max-width: 400px) {
+
+        height: 170px;
+
+    }
   
 `;
 
@@ -46,6 +100,20 @@ const StyledButtonNext = styled.span`
 
     }
 
+     @media (max-width: 500px) {
+
+        right: 7%;
+        margin-top: -10px;
+
+    }
+
+     @media (max-width: 400px) {
+
+        right: 6%;
+
+    }
+ 
+
 `;
 
 
@@ -73,7 +141,21 @@ const StyledButtonPrev = styled.span`
 
     }
 
+     @media (max-width: 500px) {
+
+        left: 7%;
+        margin-top: -10px;
+
+    }
+
+     @media (max-width: 400px) {
+
+        right: 6%;
+
+    }
+
 `;
+
 
 const StyledList = styled.ul`
 
@@ -82,12 +164,66 @@ const StyledList = styled.ul`
     position: relative;
 
     width: 100%;
+
     height: 600px;
 
     margin: 0;
+
     padding: 0;
 
-  
+    @media (max-width: 2200px) {
+
+        height: 500px;
+
+    }
+
+    @media (max-width: 1800px) {
+
+        height: 400px;
+
+    }
+
+    @media (max-width: 1400px) {
+
+        height: 350px;
+
+    }
+
+    @media (max-width: 1300px) {
+
+        height: 500px;
+
+    }
+
+    @media (max-width: 1200px) {
+
+        height: 400px;
+
+    }
+
+     @media (max-width: 800px) {
+
+        height: 300px;
+
+    }
+
+     @media (max-width: 600px) {
+
+        height: 250px;
+
+    }
+
+     @media (max-width: 500px) {
+
+        height: 200px;
+
+    }
+
+     @media (max-width: 400px) {
+
+        height: 170px;
+
+    }
 
 `;
 

@@ -13,7 +13,14 @@ const StyledContainer = styled.div`
 const StyledCenter = styled.div`
 
     width: 75%;
+
     margin: 0 auto;
+
+     @media (max-width: 1400px) {
+
+        width: 80%;
+
+    }
 
 
 `;
@@ -34,6 +41,24 @@ const StyledTitle = styled.h5`
 
     line-height: 42px;
 
+     @media (max-width: 1200px) {
+
+        padding-top: 20px;
+
+    }
+
+     @media (max-width: 700px) {
+
+        font-size: 2.8rem;
+
+    }
+
+     @media (max-width: 650px) {
+
+        line-height: 30px;
+
+    }
+
 `;
 
 const StyledList = styled.ul`
@@ -53,7 +78,11 @@ const StyledListItem = styled.li`
 
     color: ${props => props.theme.colorMainWhite};
 
-    font-size: 20px;
+    font-size: 1.6rem;
+
+    line-height: 2.8rem;
+
+    letter-spacing: 1px;
 
 `;
 
@@ -63,6 +92,12 @@ const StyledSpan = styled.span`
     color: ${props => props.theme.colorMainYellow};
 
     margin-right: 15px;
+
+    @media (max-width: 500px) {
+
+        margin-right: 5px;
+
+    }
 
 `;
 

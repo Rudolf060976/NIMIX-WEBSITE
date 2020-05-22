@@ -47,7 +47,7 @@ const StyledContainer = styled.nav`
     flex: 1 1 40%;
    
     
-    @media (max-width: 700px) {
+    @media (max-width: 760px) {
 
         width: 100%;
 
@@ -101,7 +101,6 @@ const StyledCloseButton = styled.span`
     }
 
 `;
-
 
 
 const StyledMenuList = styled.ul`
@@ -254,7 +253,7 @@ const StyledMenuLink = styled(Link)`
         
         font-size: 2.8rem;
 
-        color: ${props => props.selected ? props.theme.colorMainBlueClear1 : props.theme.colorMainWhite};
+        color: ${props => props.selected ? props.theme.colorMainBlueDark : props.theme.colorMainWhite};
 
         position: relative;
 

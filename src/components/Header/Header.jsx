@@ -49,11 +49,14 @@ const StyledContainer = styled.header`
 
     padding: 30px 20px 10px 20px;
 
-    @media (max-width: 700px) {
+    @media (max-width: 760px) {
 
         flex-flow: column nowrap;
 
-        align-items: center;                
+        justify-content: center;
+
+        align-items: center;   
+                   
         
     }
 
@@ -127,18 +130,13 @@ const StyledLogoContainer = styled.div`
 
     }
 
-     @media (max-width: 750px) {
-
-        flex: 1 2 15%;
-
-
-    }
-
-     @media (max-width: 700px) {
+     @media (max-width: 760px) {
 
         width: 100%;
-
+        
         display: flex;
+
+        flex-flow: row nowrap;
 
         justify-content: center;
 
@@ -147,7 +145,10 @@ const StyledLogoContainer = styled.div`
         padding-bottom: 30px;
 
 
+
     }
+
+    
 
     @media (max-width: 500px) {
 
@@ -194,11 +195,10 @@ const StyledLogo = styled(Image)`
 
     animation-fill-mode: forwards;
 
-     @media (max-width: 700px) {
+     @media (max-width: 760px) {
 
-        max-width: 200px;
-
-
+        width: 200px;
+        
     }
      
 

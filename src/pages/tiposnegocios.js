@@ -18,6 +18,37 @@ const StyledContainer = styled.section`
 
     position: relative;
 
+    @media(max-width: 1300px) {
+
+       padding-top: 150px;
+
+    }
+
+    @media(max-width: 1000px) {
+
+       padding-top: 190px;
+
+    }
+
+     @media(max-width: 700px) {
+
+       padding-bottom: 0;
+
+    }
+
+    @media(max-width: 500px) {
+
+       padding-top: 140px;
+
+    }
+
+     @media(max-width: 400px) {
+
+       padding-top: 170px;
+
+    }
+    
+
 `;
 
 
