@@ -100,10 +100,16 @@ const StyledButtonNext = styled.span`
 
     }
 
+     @media (max-width: 1200px) {
+
+        font-size: 3rem;
+
+    }
+
      @media (max-width: 500px) {
 
         right: 7%;
-        margin-top: -10px;
+        margin-top: -10px;        
 
     }
 
@@ -141,10 +147,17 @@ const StyledButtonPrev = styled.span`
 
     }
 
+     @media (max-width: 1200px) {
+
+        font-size: 3rem;
+
+    }
+
      @media (max-width: 500px) {
 
         left: 7%;
         margin-top: -10px;
+        
 
     }
 

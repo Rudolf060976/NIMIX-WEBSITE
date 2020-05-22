@@ -56,9 +56,7 @@ const mainQuery = graphql`
 `;
 
 
-
 const StyledContainer = styled.div`
-
 
     width: 50%;
 
@@ -80,17 +78,13 @@ const StyledContainer = styled.div`
 
     }
 
-    
-
     @media(max-width: 700px) {
 
         width: 100%;
 
         border-radius: 0;
 
-    }
-
-    
+    }   
     
 `;
 

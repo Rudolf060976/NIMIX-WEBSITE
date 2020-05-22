@@ -78,11 +78,17 @@ const StyledListItem = styled.li`
 
     color: ${props => props.theme.colorMainWhite};
 
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 
     line-height: 2.8rem;
 
     letter-spacing: 1px;
+
+    @media (max-width: 1300px) {
+
+        font-size: 1.8rem;
+
+    }
 
 `;
 
@@ -100,7 +106,6 @@ const StyledSpan = styled.span`
     }
 
 `;
-
 
 
 function Content({ title, functionsList }) {
