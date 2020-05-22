@@ -38,7 +38,7 @@ const StyledLink = styled(Link)`
 
 
 
-function Gototop() {
+function Gototop({ scrollPointId }) {
 
     useEffect(() => {
         
@@ -64,7 +64,7 @@ function Gototop() {
 
     return (
         <StyledContainer>
-            <StyledLink to="home-scroll-point" smooth={true} duration={700}>Ir al Principio</StyledLink>
+            <StyledLink to={scrollPointId} smooth={true} duration={700}>Ir al Principio</StyledLink>
         </StyledContainer>
     );
 }

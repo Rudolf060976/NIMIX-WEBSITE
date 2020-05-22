@@ -41,6 +41,7 @@ const StyledCenter = styled.div`
     @media (max-width: 1300px) {
 
         height: 700px;
+        width: 90%;
 
     }
 
@@ -50,10 +51,16 @@ const StyledCenter = styled.div`
 
     }
 
+      @media (max-width: 850px) {
+
+        width: 100%;
+
+    }
+
     @media (max-width: 700px) {
 
         height: 400px;
-        width: 90%;
+        
 
     }
 
@@ -84,6 +91,24 @@ const StyledButtonNext = styled.span`
     cursor: pointer;
     transition: all .3s linear;
     z-index: 2000;
+
+    @media (max-width: 850px) {
+
+        right: 30px;
+
+    }
+
+    @media (max-width: 500px) {
+
+        right: 20px;
+
+    }
+
+    @media (max-width: 400px) {
+
+        right: 10px;
+
+    }
     
     &:hover {
 
@@ -111,6 +136,24 @@ const StyledButtonPrev = styled.span`
     cursor: pointer;
     transition: all .3s linear;
     z-index: 2000;
+
+    @media (max-width: 850px) {
+
+        left: 30px;
+
+    }
+
+    @media (max-width: 500px) {
+
+        left: 20px;
+
+    }
+
+    @media (max-width: 400px) {
+
+        left: 10px;
+
+    }
 
     &:hover {
 

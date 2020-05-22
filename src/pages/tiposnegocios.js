@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Layout from '../components/layout';
 import Selector from '../components/TipoNegocio/Selector';
 import TipoNegocio from '../components/TipoNegocio/TipoNegocio';
+import Gototop from '../components/Gototop/Gototop';
 
 
 const StyledContainer = styled.section`
@@ -64,8 +65,9 @@ function Tiposnegocios() {
         <Layout selectedIndex={0}>
             <StyledContainer>
                 <Selector handleSelectedItem={handleSelected} />
-                <TipoNegocio type={selectedItem} />
-            </StyledContainer>            
+                <TipoNegocio type={selectedItem} />                
+            </StyledContainer>
+            <Gototop scrollPointId="home-scroll-point" />            
         </Layout>
     );
 }

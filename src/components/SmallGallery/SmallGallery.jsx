@@ -98,8 +98,7 @@ const StyledListItem = styled.li`
     z-index: 0;
     
     margin: 0;   
-    padding: 0;
-    
+    padding: 0;    
 
     cursor: pointer;
 
@@ -186,7 +185,7 @@ function SmallGallery({ imagesArray }) {
             left: '50%',
             transform: 'translate(-50%,-50%)',            
             opacity: 1,
-            boxShadow: '0px 0px 15px black'
+            boxShadow: '0px 0px 10px #FFF'
             
         },
         {

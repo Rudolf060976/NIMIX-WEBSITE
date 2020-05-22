@@ -73,7 +73,7 @@ const StyledMobilMenuIcon = styled.span`
     left: 20px;
     top: 20px;
     display: none;
-    border: solid 1px ${props => props.theme.colorMainBlueDark};
+    
     box-shadow: 2px 2px 5px black;
    
     border-radius: 5px;
@@ -92,8 +92,9 @@ const StyledMobilMenuIcon = styled.span`
     &:active {
 
         box-shadow: none;
-        background-color: ${props => props.theme.colorMainBlueDark};
-        color: white;
+        background-color: ${props => props.theme.colorMainWhite};
+        color: ${props => props.theme.colorMainBlueDark};
+        border: 1px solid ${props => props.theme.colorMainBlueDark};
 
     }
     
@@ -104,7 +105,8 @@ const StyledMobilMenuIcon = styled.span`
         padding: 10px;        
         font-size: 2.2rem; 
         z-index: 1000;
-        color: ${props => props.theme.colorMainBlueDark};
+        background-color: ${props => props.theme.colorMainBlueDark};
+        color: ${props => props.theme.colorMainWhite};
         
      
     }

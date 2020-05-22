@@ -27,7 +27,7 @@ const IndexPage = () => {
     <Weoffer />
     <Whytobuy />
     <News />
-    <Gototop />
+    <Gototop scrollPointId="home-scroll-point" />
     </Layout>
   );
 

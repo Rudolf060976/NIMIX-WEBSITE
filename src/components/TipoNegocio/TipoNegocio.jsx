@@ -64,8 +64,9 @@ const StyledContainer = styled.div`
 
     background-color: ${props => rgba(props.theme.colorMainBlueDark,1)};
 
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 0px 5px black;
 
+    
     border-radius: 20px;
 
 `;

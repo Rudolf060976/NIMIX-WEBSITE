@@ -34,8 +34,6 @@ const textAnimation = keyframes`
 
     }
 
-
-
 `;
 
 
@@ -73,6 +71,16 @@ const StyledListItem = styled.li`
     animation-duration: 1s;
     animation-fill-mode: forwards;
 
+    transition: all .3s linear;
+
+    &:hover {
+
+        color: ${props => !props.isSelected ? props.theme.colorMainYellow : props.theme.colorMainBlueDark};
+
+
+    }
+
+
     &::before {
 
         content: '';
@@ -89,6 +97,9 @@ const StyledListItem = styled.li`
 
         border-top-right-radius: 50px;
         border-bottom-right-radius: 50px;
+
+        box-shadow: 2px 2px 5px gray;
+       
 
         animation-name: ${props => props.isSelected ? animation : 'none'};
         animation-duration: 1s;

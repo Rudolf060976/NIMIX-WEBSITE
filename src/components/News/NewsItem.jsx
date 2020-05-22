@@ -14,13 +14,21 @@ const StyledContainer = styled.li`
 
     height: 640px;
 
-    box-shadow: 5px 5px 10px black;
+    
 
     border: 1px solid white;
 
     grid-row: auto;
 
     grid-column: auto;
+
+
+    &:hover {
+
+        box-shadow: 5px 5px 10px black;
+
+
+    }
 
      @media (max-width: 1650px) {
 
