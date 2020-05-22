@@ -147,15 +147,19 @@ const StyledMenuList = styled.ul`
 
 const StyledMenuListItem = styled.li`
 
-    padding: 15px 0;
+    @media (max-width: 500px) {
 
-    width: 100%;
+        padding: 15px 0;
 
-    display: flex;
+        width: 100%;
 
-    justify-content: center;
+        display: flex;
 
-    align-items: center;
+        justify-content: center;
+
+        align-items: center;
+
+    }   
     
 `;
 
