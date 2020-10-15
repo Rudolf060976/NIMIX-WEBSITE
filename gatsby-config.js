@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 module.exports = {
   siteMetadata: {
     title: `Nimix 1 Administrativo`,
@@ -88,6 +90,28 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve:`gatsby-source-cloudinary`,
+      options: {
+      cloudName: process.env.CLOUDINARY_CLOUD_NAME,
+      apiKey: process.env.CLOUDINARY_API_KEY,
+      apiSecret: process.env.CLOUDINARY_API_SECRET,
+      resourceType: `image`,
+      type: `all`,
+      prefix: `samples/`
+      }
+  },
+  {
+    resolve:`gatsby-source-cloudinary`,
+    options: {
+    cloudName: process.env.CLOUDINARY_CLOUD_NAME,
+    apiKey: process.env.CLOUDINARY_API_KEY,
+    apiSecret: process.env.CLOUDINARY_API_SECRET,
+    resourceType: `video`,
+    type: `all`,
+    prefix: `nimix-videos/`
+    }
+},
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

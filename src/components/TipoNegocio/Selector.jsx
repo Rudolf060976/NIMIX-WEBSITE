@@ -173,17 +173,16 @@ const StyledListItem = styled.li`
     &::before {
 
         content: '';
+        
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
         background-color: ${props => props.theme.colorMainBlueClear1};
-       
         transform-origin: left;
-        transform: scaleX(0); 
+        transform: scaleX(0);        
         z-index: -1;
-
         border-top-right-radius: 50px;
         border-bottom-right-radius: 50px;
 

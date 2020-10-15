@@ -36,7 +36,6 @@ const logoAnimation = keyframes`
 `;
 
 
-
 const StyledContainer = styled.header`
 
     width: 100%;
@@ -144,8 +143,6 @@ const StyledLogoContainer = styled.div`
 
         padding-top: 30px;
 
-
-
     }
 
     
@@ -176,8 +173,6 @@ const StyledLogoContainer = styled.div`
         z-index: 500; 
 
     }
-
-
       
 `;
 
