@@ -1,7 +1,7 @@
 ---
 title: "Coronavirus: las amenazas y cambios que sufrirá la nueva generación de
   smartphones por la pandemia de covid-19"
-date: 2020-05-11T16:48:25.822Z
+date: 2020-10-20T16:48:25.822Z
 description: Cada otoño, Mazen Kourouche acude a la tienda Apple más grande de
   Sídney, Australia, y hace cola durante horas para ser de los primeros del
   mundo en hacerse con el último iPhone.

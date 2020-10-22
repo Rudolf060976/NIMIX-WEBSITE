@@ -1,7 +1,7 @@
 ---
 title: "Coronavirus en EE.UU.: COBOL, el obsoleto lenguaje informático que queda
   en entredicho con la pandemia"
-date: 2020-05-11T16:46:17.994Z
+date: 2020-10-20T16:46:17.994Z
 description: La pandemia del nuevo coronavirus hizo que haya gran demanda de
   ciertos insumos como respiradores, mascarillas e incluso médicos retirados en
   muchas partes del mundo.

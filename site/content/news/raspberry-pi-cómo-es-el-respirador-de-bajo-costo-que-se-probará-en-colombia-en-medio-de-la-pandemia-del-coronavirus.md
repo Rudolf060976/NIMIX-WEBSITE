@@ -1,7 +1,7 @@
 ---
 title: "Raspberry Pi: cómo es el respirador de bajo costo que se probará en
   Colombia en medio de la pandemia del coronavirus"
-date: 2020-05-11T16:47:08.894Z
+date: 2020-10-20T16:47:08.894Z
 description: La tecnología puede ser una gran aliada en medio de la pandemia del
   nuevo coronavirus.
 header_image: /images/uploads/raspberrypi.jpg
