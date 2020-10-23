@@ -1,22 +1,22 @@
-import React, { Component } from "react";
-import { navigate } from "gatsby";
-import { useAuth0 } from '../../auth/react-auth0-wrapper';
+import React from "react";
+
+import { useAuth0 } from '@auth0/auth0-react';
 
 
 
 const PrivateRoute = ({ component: Component, location, ...rest }) => {
-  /* if (!isLoggedIn() && location.pathname !== `/app/login`) {
-    navigate("/app/login")
-    return null
-  }  */
+  
 
-  const { isAuthenticated, loginWithRedirect, loading } = useAuth0();
+  const { isAuthenticated, loginWithRedirect, isLoading } = useAuth0();
+ 
+  console.log({ isAuthenticated, loginWithRedirect, isLoading } );
 
-  if (loading) return <div>Loading...</div>; //IMPORTANTE!!!!! PORQUE SI SE HACE CLICK AL BACK BUTTON DEL NAVEGADOR O SI SE REFRESCA LA PAGINA, SE TIENE QUE VOLVER A CARGAR EL COMPONENTE AUTH0 WRAPPER
+  if (isLoading) return <div>Loading...</div>; //IMPORTANTE!!!!! PORQUE SI SE HACE CLICK AL BACK BUTTON DEL NAVEGADOR O SI SE REFRESCA LA PAGINA, SE TIENE QUE VOLVER A CARGAR EL COMPONENTE AUTH0 WRAPPER
 
   if (!isAuthenticated) {
     
-      loginWithRedirect({redirect_uri: (window.location.origin + location.pathname)});
+      
+      loginWithRedirect();
             
       return null;
       

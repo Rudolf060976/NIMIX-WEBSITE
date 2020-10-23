@@ -8,7 +8,7 @@ import Weoffer from "../components/Weoffer/Weoffer";
 import Whytobuy from "../components/Whytobuy/Whytobuy";
 import News from "../components/News/News";
 import Gototop from "../components/Gototop/Gototop";
-import { useAuth0 } from '../auth/react-auth0-wrapper';
+import { useAuth0 } from '@auth0/auth0-react';
 
 
 const IndexPage = () => {
@@ -17,17 +17,17 @@ const IndexPage = () => {
   
   const auth0 = useAuth0();
   
-  if (isBrowser && auth0 && auth0.loading) return <div>Loading ....</div>;   
+  if (isBrowser && auth0 && auth0.isLoading) return <div>Loading ....</div>;   
 
   return (
     <Layout selectedIndex={0} >      
-    <SEO title="Home" />    
+    <SEO title="Home" />        
     <HomeGallery />
     <Features />
     <Weoffer />
     <Whytobuy />
     <News />
-    <Gototop scrollPointId="home-scroll-point" />
+    <Gototop scrollPointId="home-scroll-point" />    
     </Layout>
   );
 

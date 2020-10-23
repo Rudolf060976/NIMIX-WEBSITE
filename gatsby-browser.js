@@ -4,34 +4,24 @@ import './src/globalStyles/normalize.scss';
 
 import './src/globalStyles/bootstrapStyles.scss';
 
-import { Auth0Provider }  from './src/auth/react-auth0-wrapper';
-import config from './src/auth/config.json';
+import { Auth0Provider } from "@auth0/auth0-react";
 
 import React from 'react';
-import { navigate } from 'gatsby';
 
-const onRedirectCallback = appState => {
-    
-    navigate(appState && appState.targetUrl
-        ? appState.targetUrl
-        : window.location.pathname
-    );
-   /* history.push(
-      appState && appState.targetUrl
-        ? appState.targetUrl
-        : window.location.pathname
-    ); */
-  };
+import config from './src/auth/config';
+
+
 
 
 export const wrapRootElement = ({ element }) => {
 
+   
     return (
         <Auth0Provider
             domain={config.domain}
-            client_id={config.clientId}               
-            redirect_uri={window.location.origin} // ESTA ES LA UBICACION DONDE ME ENCUENTRO CADA VEZ QUE HAGO UNA LLAMADA A loginWithRedirect Y ASI AUTH0 SABE A DONDE REGRESAR AL TERMINAR DE AUTENTICAR
-            onRedirectCallback={onRedirectCallback}      //  PERMITE REDIRECCIONAR DESPUES DE AUTENTICAR AL SITIO DONDE ME ENCONTRABA ANTES DE PASAR A AUTH0
+            clientId={config.clientId}               
+            redirectUri={window.location.origin + '/app/clientes'} // ESTA ES LA UBICACION DONDE ME ENCUENTRO CADA VEZ QUE HAGO UNA LLAMADA A loginWithRedirect Y ASI AUTH0 SABE A DONDE REGRESAR AL TERMINAR DE AUTENTICAR
+            
         >
             {element}
         </Auth0Provider>

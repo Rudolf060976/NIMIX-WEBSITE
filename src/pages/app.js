@@ -10,7 +10,7 @@ import Redirecting from '../components/Redirecting/Redirecting';
 function app() {
     return (
         <Router basepath="/app">  
-            <Redirecting path="/" />            
+            <Redirecting path="/" />
             <PrivateRoute path="/clientes" component={Clientes} />                        
             <NotFound path="/:route" />                  
         </Router>

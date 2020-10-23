@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { useAuth0 } from '../../auth/react-auth0-wrapper';
+import { useAuth0 } from '@auth0/auth0-react';
 
 function Clientes() {
 
@@ -9,8 +9,7 @@ function Clientes() {
     return (
         <div>
             HELLO FROM TUTORIALS
-            <button onClick={()=> logout()}>Logout</button>
-
+            <button onClick={()=> logout({ returnTo: window.location.origin })}>Logout</button>
 
         </div>
     );
