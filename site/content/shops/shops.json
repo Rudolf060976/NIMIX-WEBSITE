@@ -1,13 +1,136 @@
 {
-  "title": "Adquiere Nimix1 para tu Tienda o Franquicia y asume el control administrativo.",
+  "title": "¡Adquiere Nimix1 para tu Tienda o Franquicia y asume el control administrativo!",
   "imageslist": [
     {
-      "image": "/images/uploads/tienda_1.jpg"
+      "image": "/images/uploads/bode_1.jpg"
+    },
+    {
+      "image": "/images/uploads/bode_2.jpg"
+    },
+    {
+      "image": "/images/uploads/bode_3.jpg"
+    },
+    {
+      "image": "/images/uploads/bode_4.jpg"
+    },
+    {
+      "image": "/images/uploads/bode_5.jpg"
+    },
+    {
+      "image": "/images/uploads/bode_6.jpg"
+    },
+    {
+      "image": "/images/uploads/bode_7.jpg"
+    },
+    {
+      "image": "/images/uploads/bode_8.jpg"
+    },
+    {
+      "image": "/images/uploads/bode_9.jpg"
+    },
+    {
+      "image": "/images/uploads/bode_10.jpg"
+    },
+    {
+      "image": "/images/uploads/bode_11.jpg"
+    },
+    {
+      "image": "/images/uploads/bode_12.jpg"
+    },
+    {
+      "image": "/images/uploads/bode_13.jpg"
+    },
+    {
+      "image": "/images/uploads/bode_14.jpg"
     }
   ],
   "functions": [
     {
-      "function": "Facturación adaptable al tipo de Negocio."
+      "function": "Pantalla de Facturación fácil y rápida, puede cargar artículos con códigos de barra o manualmente con teclado y mouse."
+    },
+    {
+      "function": "Indicación de totales en dólares y moneda local."
+    },
+    {
+      "function": "Cuenta con un total de 7 Precios disponibles, descuentos en porcentajes y montos, recargos, fletes e impuestos."
+    },
+    {
+      "function": "Búsquedas de artículos super rápidas, por código, referencia o nombre."
+    },
+    {
+      "function": "Indicación de existencia en inventario y bloqueo de ventas(opcional) si no hay existencia."
+    },
+    {
+      "function": "Soporte total de Impresoras Fiscales."
+    },
+    {
+      "function": "Impresión de comprobantes de pago (opcional)."
+    },
+    {
+      "function": "Escalable a múltiples cajas y puntos de venta."
+    },
+    {
+      "function": "Aceptación de múltiples formas de pago."
+    },
+    {
+      "function": "Manejo de códigos de barra y balanzas electrónicas."
+    },
+    {
+      "function": "Seguridad Integrada, solicita contraseña para todas las funciones importantes."
+    },
+    {
+      "function": "Presupuestos, Notas de Entrega, Notas de Crédito (Devoluciones) y Anulaciones."
+    },
+    {
+      "function": "Control de Inventario en múltiples almacenes."
+    },
+    {
+      "function": "Entradas y Salidas de inventario por almacén."
+    },
+    {
+      "function": "Ajustes de Inventario por almacén."
+    },
+    {
+      "function": "Clasificación del inventario por Departamentos y Sub-Departamentos."
+    },
+    {
+      "function": "Repreciación de Artículos (cambios de precios rápidos por lotes)."
+    },
+    {
+      "function": "Ventas a Crédito y control de Cuentas por Cobrar."
+    },
+    {
+      "function": "Registro de Compras y Proveedores."
+    },
+    {
+      "function": "Compras a Crédito y control de Cuentas por Pagar."
+    },
+    {
+      "function": "Registro de Gastos y clasificación de Gastos."
+    },
+    {
+      "function": "Registro de Retenciones de clientes y proveedores."
+    },
+    {
+      "function": "Libros de Compras y Ventas."
+    },
+    {
+      "function": "Amplia variedad de reportes administrativos: Unidades vendidas, por departamento, por cliente, utilidades, costos, inventario, listas de precios, etc."
+    },
+    {
+      "function": "Todos los Reportes se muestran en pantalla y pueden ser impresos o exportados a PDF, Excel, Doc, etc."
+    },
+    {
+      "function": "Impresión de Etiquetas de Precios, Habladores y Códigos de Barras."
+    },
+    {
+      "function": "Registro de costos en dólares y cálculo automático de precios en moneda local al variar el tipo de cambio."
+    },
+    {
+      "function": "Usuarios con contraseñas configurables para que intrusos no entren a su sistema."
+    },
+    {
+      "function": "Compatible con Windows XP, Windows 7, Windows 8 y Windows 10."
     }
   ]
 }
