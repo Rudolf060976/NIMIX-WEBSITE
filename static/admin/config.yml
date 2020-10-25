@@ -123,4 +123,18 @@ collections:
             name: "functions"
             widget: "list"
             fields:
-              - {label: "Function", name: "function", widget: "string"}               
+              - {label: "Function", name: "function", widget: "string"}   
+  - label: "Página: Preguntas Frecuentes"
+    name: "preguntas"
+    files:
+      - label: "Preguntas y Respuestas"
+        name: "questions"
+        file: "site/content/questions/questions.json"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}          
+          - label: "Lista de Preguntas"
+            name: "questionsList"
+            widget: "list"
+            fields:
+              - {label: "Question", name: "question", widget: "string"}
+              - {label: "Answer", name: "answer", widget: "text"}
