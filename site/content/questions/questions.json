@@ -1,3 +1,45 @@
 {
-    
+  "questionsList": [
+    {
+      "question": "¿Cuáles son los requerimientos mínimos de un Computador para instalar y operar Nimix1?",
+      "answer": "Re: Cualquier computador que opere con Windows XP, Windows 7, Windows 8 o Windows 10 funciona perfectamente con Nimix1. Sin embargo, se recomienda como mínimo: Procesador Dual Core o AMD Sempron, Memoria Ram 2Gb, Disco Duro 80Gb. Es necesaria una conexión a Internet para la instalación."
+    },
+    {
+      "question": "¿Necesito Internet para utilizar Nimix1?",
+      "answer": "Re: Se necesita una conexión a internet de banda ancha para realizar la instalación de Nimix1. Una vez instalado, no se requiere la conexión a internet."
+    },
+    {
+      "question": "¿Qué otra cosa necesito para Instalar Nimix1 en mi negocio?",
+      "answer": "Re: Solamente un computador y una conexión a internet."
+    },
+    {
+      "question": "¿Puedo instalar Nimix1 en equipos adicionales?",
+      "answer": "Re: Sí. La licencia principal es válida para 1 equipo, pero puede adquirir licencias adicionales para cualquier cantidad de equipos conectados en red, ya sean Administrativos, Cajas, Puntos de Venta, etc.\n"
+    },
+    {
+      "question": "¿Después de instalado, podré conectarme a Nimix1 desde el computador de mi casa?",
+      "answer": "Re: Sí. Siempre y cuando tenga servicio de internet de banda ancha en el computador en el que está instalado Nimix1 y también en su casa, podrá ingresar al sistema Nimix1 utilizando Teamviewer o cualquier otro sistema de acceso remoto."
+    },
+    {
+      "question": "¿Debo pagar por la Renovación de la Licencia después de 1 año?",
+      "answer": "Re: No. La licencia que usted adquiere es de por vida, de manera que no deberá pagar renovaciones anuales. Sin embargo, usted puede actualizar su sistema a una nueva versión cuando lo desee, al costo de un servicio técnico."
+    },
+    {
+      "question": "¿La instalación y el Servicio Técnico se realizan remotamente?",
+      "answer": "Re: Sí. Tanto la instalación y configuración de Nimix1 como los servicios técnicos posteriores son realizados remotamente por nosotros utilizando una aplicación como Teamviewer u otra similar."
+    },
+    {
+      "question": "¿Como realizo la compra de Nimix1?",
+      "answer": "Re: En el sitio web de Nimix1, entre en la sección Comprar y siga las instrucciones para efectuar la compra. Recibirá por email lo siguiente: Su usuario y contraseña para utilizar los tutoriales en el Area de Clientes, su carpeta con la Licencia a nombre de su empresa, un link de descarga del software a instalar en su PC para conectarnos remotamente, y por último, algunas otras instrucciones para cordinar la fecha y hora de instalación. Nosotros nos comunicaremos con usted para coordinar todo eso."
+    },
+    {
+      "question": "¿Como aprendo a utilizar Nimix1?",
+      "answer": "Re: Durante la instalación ofrecemos unos breves minutos de explicación, el resto del entrenamiento lo recibe entrando en el sitio web, en la sección Area de Clientes. Allí encontrará los tutoriales que lo enseñarán a utilizar Nimix1. Para ello debe utilizar el usuario y contraseña que le fueron suministrados al momento de adquirir su licencia."
+    },
+    {
+      "question": "¿Como solicito un servicio técnico u horas de entrenamiento personalizadas?",
+      "answer": "Re: Si requiere un servicio técnico u horas de entrenamiento adicionales, debe entrar en la sección Contacto del Website y llenar el formulario con sus datos y una explicación de sus requerimientos. Nuestro personal lo contactará para coordinar el pago de los servicios, así como la fecha y hora de ejecución de los mismos."
+    }
+  ],
+  "title": "Preguntas y respuestas frecuentes"
 }
