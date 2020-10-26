@@ -83,6 +83,13 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `questions`,
+        path: `${__dirname}/site/content/questions`,
+      }
+    },
+    {
       resolve:`gatsby-source-cloudinary`,
       options: {
       cloudName: process.env.CLOUDINARY_CLOUD_NAME,

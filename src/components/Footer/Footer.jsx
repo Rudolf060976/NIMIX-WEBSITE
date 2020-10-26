@@ -109,12 +109,12 @@ function Footer() {
         <StyledContainer>
             <StyledList>
                 <StyledListItem>
-                    <StyledLink to="/">
+                    <StyledLink to="/tiposnegocios">
                         Tipos de Negocio
                     </StyledLink>
                 </StyledListItem>
                 <StyledListItem>
-                    <StyledLink to="/">
+                    <StyledLink to="/preguntas">
                         Preguntas Frecuentes
                     </StyledLink>
                 </StyledListItem>
