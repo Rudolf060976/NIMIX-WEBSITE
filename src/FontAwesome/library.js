@@ -28,7 +28,9 @@ import {
     faFacebookF
 } from '@fortawesome/free-brands-svg-icons'; */
 
-library.add(faAngleRight, faAngleLeft, faArrowCircleRight, faArrowCircleLeft, faArrowAltCircleRight, faCertificate, faCheckCircle, faHandPointRight, faBars, faTimes, faUtensils, faTools, faWineBottle, faStore);
+import { faCentercode } from '@fortawesome/free-brands-svg-icons';
+
+library.add(faAngleRight, faAngleLeft, faArrowCircleRight, faArrowCircleLeft, faArrowAltCircleRight, faCertificate, faCheckCircle, faHandPointRight, faBars, faTimes, faUtensils, faTools, faWineBottle, faStore, faCentercode);
 
 /*
 

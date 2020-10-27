@@ -133,6 +133,13 @@ module.exports = {
         icon: `src/images/nimix-icon.png`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-netlify-cms`    
+    `gatsby-plugin-netlify-cms`,
+    {
+      resolve: `gatsby-plugin-portal`,
+      options: {
+        key: 'portal',
+        id: 'portal',        
+      },
+    },    
   ],
 }

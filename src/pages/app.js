@@ -4,13 +4,13 @@ import Clientes from '../components/Clientes/Clientes';
 import NotFound from '../components/NotFound/NotFound';
 import PrivateRoute from '../components/PrivateRoute/PrivateRoute';
 import Redirecting from '../components/Redirecting/Redirecting';
-
+import Loading from '../components/Loading/Loading.jsx';
 
 
 function app() {
     return (
         <Router basepath="/app">  
-            <Redirecting path="/" />
+            <Loading path="/" />
             <PrivateRoute path="/clientes" component={Clientes} />                        
             <NotFound path="/:route" />                  
         </Router>

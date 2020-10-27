@@ -9,7 +9,7 @@ import Whytobuy from "../components/Whytobuy/Whytobuy";
 import News from "../components/News/News";
 import Gototop from "../components/Gototop/Gototop";
 import { useAuth0 } from '@auth0/auth0-react';
-
+import Loading from "../components/Loading/Loading";
 
 const IndexPage = () => {
  
@@ -17,9 +17,10 @@ const IndexPage = () => {
   
   const auth0 = useAuth0();
   
-  if (isBrowser && auth0 && auth0.isLoading) return <div>Loading ....</div>;   
+  if (isBrowser && auth0 && auth0.isLoading) return <Loading />;   
 
   return (
+    <>    
     <Layout selectedIndex={0} >      
     <SEO title="Home" />        
     <HomeGallery />
@@ -29,6 +30,7 @@ const IndexPage = () => {
     <News />
     <Gototop scrollPointId="home-scroll-point" />    
     </Layout>
+    </>
   );
 
 }
