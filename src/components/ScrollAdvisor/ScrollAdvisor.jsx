@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect, useCallback } from 'react';
 
 
 function ScrollAdvisor({ children, offSet }) {
@@ -7,18 +7,7 @@ function ScrollAdvisor({ children, offSet }) {
 
     const [play, setPlay] = useState(false);
 
-    useEffect(() => {
-
-        window.addEventListener('scroll', handleScroll);
-
-    return () => {
-        
-        window.removeEventListener('scroll', handleScroll);
-
-    };
-    }, [])
-
-    const handleScroll = () => {
+    const handleScroll = useCallback(() => {
      
         
         const introPosition = containerElement.current.getBoundingClientRect().top;
@@ -36,7 +25,20 @@ function ScrollAdvisor({ children, offSet }) {
             setPlay(false);
         }
 
+    }, [offSet, play]);
+
+    useEffect(() => {
+
+        window.addEventListener('scroll', handleScroll);
+
+    return () => {
+        
+        window.removeEventListener('scroll', handleScroll);
+
     };
+    }, [handleScroll]);
+
+    
 
 
     return (

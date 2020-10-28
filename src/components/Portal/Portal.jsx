@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import ReactDOM from 'react-dom';
 
 // Use a ternary operator to make sure that the document object is defined
@@ -18,7 +18,7 @@ function Portal({ children }) {
         return () => {
             portalRoot.removeChild(el);
         }
-    }, []);
+    }, [el]);
 
 
     if(el) {

@@ -248,9 +248,7 @@ function HomeGallery() {
         }
     }, [pos])
 
-    const imagesArray = [image1, image2, image3];
-
-
+  
     const positionsArray = [
         {
             pos1: 0,
