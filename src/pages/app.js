@@ -3,7 +3,6 @@ import { Router } from '@reach/router';
 import Clientes from '../components/Clientes/Clientes';
 import NotFound from '../components/NotFound/NotFound';
 import PrivateRoute from '../components/PrivateRoute/PrivateRoute';
-import Redirecting from '../components/Redirecting/Redirecting';
 import Loading from '../components/Loading/Loading.jsx';
 
 
