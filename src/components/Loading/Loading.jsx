@@ -23,9 +23,7 @@ const rotation = keyframes`
 `;
 
 const StyledSpan = styled.span`
-
-    display: block;
-
+    
     color:#005373;
 
     margin-right: 15px;
