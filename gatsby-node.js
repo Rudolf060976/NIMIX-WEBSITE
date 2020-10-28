@@ -13,7 +13,7 @@ exports.onCreatePage = async ({ page, actions }) => {
   }
 
 
-  exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+  exports.onCreateWebpackConfig = ({ getConfig, stage, loaders, actions }) => {
     if (stage === "build-html") {
       /*
        * During the build step, `auth0-js` will break because it relies on
@@ -33,4 +33,15 @@ exports.onCreatePage = async ({ page, actions }) => {
         },
       })
     }
+
+    // LAS SIGUIENTES LINEAS SON PARA CORREGIR UNA ALERTA DE GATSBY SOLICITANDO @hot-loader/react-dom
+
+    const config = getConfig()
+    if (stage.startsWith('develop') && config.resolve) {
+      config.resolve.alias = {
+        ...config.resolve.alias,
+        'react-dom': '@hot-loader/react-dom'
+      }
+    }
+
   };

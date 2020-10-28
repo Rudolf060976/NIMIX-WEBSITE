@@ -319,7 +319,7 @@ function Menu({ openMenu, handleCloseMenu, selectedIndex }) {
                     </StyledMenuLink>                    
                 </StyledMenuListItem>
                 <StyledMenuListItem>
-                    <StyledMenuLink to="#" selected={selectedIndex === 3 ? true : false} openMenu={openMenu}>
+                    <StyledMenuLink to="/" selected={selectedIndex === 3 ? true : false} openMenu={openMenu}>
                         Contacto
                     </StyledMenuLink>                    
                 </StyledMenuListItem>
