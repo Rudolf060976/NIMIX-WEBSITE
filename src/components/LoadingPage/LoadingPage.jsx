@@ -23,24 +23,23 @@ const rotation = keyframes`
 
 const StyledContainer = styled.div`
    
+   display: flex;
 
-    width: 100vw;
+   justify-content: center;
+
+   align-items: center;
+
+   width: 100%;
     
-    height: 60vh;
+   height: 60vh;
 
-    background-color: white;
-    
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-    
+   background-color: white;
+     
     
 `;
 
 const StyledImage = styled.img`
-
+    
     width: 100%;
 
     height: 100%;
