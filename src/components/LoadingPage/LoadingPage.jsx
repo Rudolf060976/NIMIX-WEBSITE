@@ -8,7 +8,7 @@ const rotation = keyframes`
 
     from {
 
-        transform: rotate(0deg) scale;
+        transform: rotate(0deg);
 
     } 
 
