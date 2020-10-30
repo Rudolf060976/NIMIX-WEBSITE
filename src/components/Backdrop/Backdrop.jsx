@@ -11,9 +11,9 @@ const StyledContainer = styled.div`
     
     height: 100vh;
 
-    background-color: ${rgba('#005373',0.2)};
+    background-color: white;
     
-    display: ${props => props.center ? 'flex' : 'block'};
+    display: ${props => props.center ? 'flex' : 'block' };
 
     justify-content: center;
 
