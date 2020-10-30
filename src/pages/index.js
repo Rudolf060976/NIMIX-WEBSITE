@@ -17,7 +17,7 @@ const IndexPage = () => {
   
   const auth0 = useAuth0();
   
-  if (isBrowser && auth0 && auth0.isLoading) return <LoadingPage />;   
+  if (isBrowser && auth0 && auth0.isLoading) return null;   
 
   return (
     <>    
