@@ -1,7 +1,7 @@
 ---
 title: "Confinamiento por coronavirus: 5 razones por las que las reuniones a
   través de Zoom son tan agotadoras."
-date: 2020-10-10T16:40:32.372Z
+date: 2020-11-19T16:40:32.372Z
 description: Para muchos de nosotros, trabajar desde la casa durante la crisis
   del coronavirus ha significado pasar mucho tiempo en aplicaciones de reuniones
   de video, como Zoom. Los efectos de esto nos han tomado por sorpresa.

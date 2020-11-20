@@ -1,7 +1,7 @@
 ---
 title: Lo que se sabe de la nueva misión del X-37B, el misterioso avión orbital
   de la Fuerza Aérea de EE.UU.
-date: 2020-10-20T16:42:38.055Z
+date: 2020-11-19T16:42:38.055Z
 description: Será su sexta misión y la Fuerza Aérea de Estados Unidos (USAF, por
   sus siglas en inglés) sostiene que será la más importante.
 header_image: /images/uploads/x-37b.jpg

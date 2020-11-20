@@ -9,7 +9,7 @@ import Whytobuy from "../components/Whytobuy/Whytobuy";
 import News from "../components/News/News";
 import Gototop from "../components/Gototop/Gototop";
 import { useAuth0 } from '@auth0/auth0-react';
-import LoadingPage from "../components/LoadingPage/LoadingPage";
+
 
 const IndexPage = () => {
  
